@@ -1,0 +1,80 @@
+CoPilot — Proprietary Software Licence
+
+Copyright (c) 2026 Micha Noel Donges. All rights reserved.
+
+
+1. Ownership
+
+CoPilot — including its source code, binaries, user interface, design,
+documentation and name — is and remains the property of Micha Noel Donges.
+Nothing in this document transfers ownership, and no right is granted that is
+not expressly stated here.
+
+
+2. Grant of use
+
+Where a copy of CoPilot has been obtained from the copyright holder or through a
+distribution channel authorised by him, the recipient is granted a personal,
+non-exclusive, non-transferable and revocable right to install and run that copy
+for their own use.
+
+No copy is currently distributed. This section describes the terms that will
+apply when one is.
+
+
+3. Restrictions
+
+Except where section 4 provides otherwise, the recipient may not:
+
+  a) copy the software, other than one backup copy;
+  b) modify, adapt, translate or create derivative works of it;
+  c) distribute, publish, sublicense, rent, lease, sell or otherwise make it
+     available to third parties;
+  d) decompile, disassemble or otherwise reverse engineer it;
+  e) remove or alter any copyright, trademark or licence notice.
+
+
+4. Mandatory statutory rights
+
+Nothing in section 3 restricts rights that cannot be excluded by agreement.
+This includes in particular the rights of a lawful user under sections 69d and
+69e of the German Copyright Act (UrhG) and the corresponding provisions of
+Directive 2009/24/EC — among them the making of a backup copy, error
+correction, and decompilation for the purpose of interoperability.
+
+
+5. No contributions
+
+This is not an open-source project. Pull requests, patches and other code
+submissions are not accepted, and sending one creates no obligation and confers
+no right on either side.
+
+
+6. Third-party components
+
+CoPilot incorporates third-party components that are distributed under their own
+licence terms. Those terms govern those components and are not affected by this
+document. Notices required by them are supplied with any distributed copy.
+
+
+7. No warranty
+
+To the extent permitted by applicable law, the software is provided "as is",
+without warranty of any kind, express or implied, including but not limited to
+warranties of merchantability, fitness for a particular purpose and
+non-infringement.
+
+
+8. Liability
+
+To the extent permitted by applicable law, liability is limited to intent and
+gross negligence. Mandatory liability remains unaffected — in particular
+liability under the Product Liability Act and for injury to life, body or
+health.
+
+
+9. Any other use
+
+For anything not covered above — redistribution, deployment inside an
+organisation, modification, or a licence on different terms — contact
+micha@ceruleancircle.com.

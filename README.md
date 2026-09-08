@@ -3,9 +3,13 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**Status: in development. Not released, and the source is not public.** This
-repository is the project's public face — what it is, how it is built, and what
-it deliberately does not do. See [LICENSE](LICENSE): all rights reserved.
+**[→ Download Orynex 0.3.1](https://github.com/70cacao/Orynex/releases/download/v0.3.1/Orynex_0.3.1_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.3.1)
+
+**Status: pre-release, and the source is not public.** It is not code-signed yet,
+so Windows will warn about an unknown publisher — the release notes say why, and
+what else is unfinished. This repository is the project's public face: what it
+is, how it is built, and what it deliberately does not do. See
+[LICENSE](LICENSE): all rights reserved.
 
 ---
 
@@ -96,8 +100,13 @@ log that records why things are the way they are rather than only what they do.
 
 ## Availability
 
-There is no download yet. When there is, it will be a signed installer published
-here.
+**[Orynex 0.3.1](https://github.com/70cacao/Orynex/releases/tag/v0.3.1)** — a
+pre-release, published on 8 September 2026.
+
+It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
+that is about the missing certificate, not about the file. **More info → Run
+anyway** gets past it. A certificate costs several hundred euros a year and this
+is a hobby project so far — saying so plainly seemed better than waiting.
 
 ## Licence
 

@@ -13,6 +13,41 @@ is, how it is built, and what it deliberately does not do. See
 
 ---
 
+## Install
+
+**1 · Download and run it.** Windows will stop you: *"Windows protected your PC —
+unknown publisher"*. That is the missing code-signing certificate, not the file.
+Click **More info**, then **Run anyway**. If you would rather not — that is a
+reasonable instinct and there is nothing here to argue with it.
+
+**2 · Say yes to the admin prompt.** It installs into `Program Files` and
+registers one small helper that runs elevated. The assistant itself never does
+(see below).
+
+**3 · Pick a language,** then two choices with sensible defaults: install the
+privilege broker (say yes — without it a few actions report themselves as
+unavailable), and start with Windows.
+
+**4 · Give it a key. Nothing works before this.** Open the workspace — hover the
+dot at the top edge, then the ⤢ button — and go to **Account → KI-Anbieter**.
+Paste an API key and press Verbinden. **The provider is detected from the key
+itself**, so there is nothing to choose: `gsk_…` is Groq, `sk-…` OpenAI or
+Anthropic, `AIza…` Google, and so on. The key is checked once against the
+provider and then goes into the Windows Credential Manager — never into a file,
+never into a log.
+
+> **No key yet?** Groq issues one free at [console.groq.com](https://console.groq.com)
+> and is what this was built against. There is no account with *me* and no server
+> in between — your key talks to your provider, directly.
+
+**5 · Optional:** a [Tavily](https://tavily.com) key on the same page turns on web
+search. Everything else works without it.
+
+**Uninstalling** is the ordinary way: Settings → Apps → Orynex. Your conversations,
+notes and settings are deliberately left behind, in
+`%APPDATA%\com.ceruleancircle.copilot` — uninstalling an app is not the same as
+asking it to forget. Delete that folder if you want it gone.
+
 ## What it is
 
 Most assistants are a website in a window. Orynex is a native application: Rust

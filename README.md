@@ -1,4 +1,4 @@
-# CoPilot
+# Orynex
 
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
@@ -11,7 +11,7 @@ it deliberately does not do. See [LICENSE](LICENSE): all rights reserved.
 
 ## What it is
 
-Most assistants are a website in a window. CoPilot is a native application: Rust
+Most assistants are a website in a window. Orynex is a native application: Rust
 and [Tauri v2](https://tauri.app) underneath, React and TypeScript on top, and it
 talks to the Windows APIs directly. **No Python, no second runtime** — one binary
 and an installer.
@@ -20,7 +20,7 @@ Nothing leaves the machine except the call to the model provider. Conversation
 history, the searchable memory, the decision log and every learned pattern live
 in a local SQLite database.
 
-**You bring your own key.** CoPilot has no server between you and the provider:
+**You bring your own key.** Orynex has no server between you and the provider:
 your key goes into the Windows Credential Manager, and the client calls the
 provider directly. Six providers are supported, with tool calling, vision and
 streaming across all of them.
@@ -67,7 +67,7 @@ This part matters more than the feature list.
   background capture, no autonomous clicking. Consent is asked for, the click
   marker is shown *before* anything is pressed, and every screen action is
   logged.
-- **Nothing is proposed from what it has learned.** CoPilot observes which
+- **Nothing is proposed from what it has learned.** Orynex observes which
   programs and tools you use together and counts them, and that is where it
   stops. The counts are visible and deletable; nothing acts on them.
 - **Deletion is complete.** Clearing the history removes the transcript *and* its

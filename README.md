@@ -91,7 +91,7 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **807 tests** green, alongside a written architecture and a decision
+Currently **816 tests** green, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 
 ## Availability

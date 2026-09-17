@@ -3,9 +3,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.4.7](https://github.com/70cacao/Orynex/releases/download/v0.4.7/Orynex_0.4.7_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.7)
+**[→ Download Orynex 0.4.8](https://github.com/70cacao/Orynex/releases/download/v0.4.8/Orynex_0.4.8_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.8)
 
-**New since 0.4.6: run the AI on your own PC, and a Full Privacy switch** — [see below](#cloud-or-local-and-full-privacy). 0.4.7 is the fix release after the first run against a real Ollama.
+**New since 0.4.6: run the AI on your own PC, and a Full Privacy switch** — [see below](#cloud-or-local-and-full-privacy). 0.4.8 fixes the one failure that mattered: a local model could report having opened something when nothing had opened — 10 times out of 10 — because the conversation it was shown made every past command look like it had been answered with a sentence. It now sees tool use as tool use: 10 of 10 the other way.
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -186,10 +186,11 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.4.7](https://github.com/70cacao/Orynex/releases/tag/v0.4.7)** — a
-pre-release, published on 17 September 2026. The local path has been run against
-a real Ollama with a small model; larger models follow Ollama's published sizes
-and have not been run here. Mail and calendar are not yet tried against real
+**[Orynex 0.4.8](https://github.com/70cacao/Orynex/releases/tag/v0.4.8)** — a
+pre-release, published on 18 September 2026. The local path has been run against
+a real Ollama with a small model, and the fix in this release was measured
+through the app's own request builder rather than by hand; larger models follow
+Ollama's published sizes and have not been run here. Mail and calendar are not yet tried against real
 accounts. The release notes list what else is unfinished.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;

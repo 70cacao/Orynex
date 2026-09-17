@@ -3,9 +3,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.4.6](https://github.com/70cacao/Orynex/releases/download/v0.4.6/Orynex_0.4.6_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.6)
+**[→ Download Orynex 0.4.7](https://github.com/70cacao/Orynex/releases/download/v0.4.7/Orynex_0.4.7_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.7)
 
-**New in 0.4.6: run the AI on your own PC, and a Full Privacy switch** — [see below](#cloud-or-local-and-full-privacy).
+**New since 0.4.6: run the AI on your own PC, and a Full Privacy switch** — [see below](#cloud-or-local-and-full-privacy). 0.4.7 is the fix release after the first run against a real Ollama.
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -34,8 +34,9 @@ unavailable), and start with Windows.
 hover the dot at the top edge, then the ⤢ button — and go to **Account**.
 
 *Local:* install [Ollama](https://ollama.com/download), then in **KI: Cloud oder
-Lokal** pick a model you already have, or let Orynex recommend one for your PC and
-download it with one click. No key, no account.
+Lokal** pick a model you already have, or choose one from the tiers Orynex shows
+for your GPU — *Minimum* from 4 GB, *Empfohlen* 12–16 GB, *Advanced* from 32 GB —
+and download it with one click. No key, no account.
 
 *Cloud:* under **KI-Anbieter (Cloud)**,
 paste an API key and press Verbinden. **The provider is detected from the key
@@ -84,7 +85,7 @@ home.
 
 | Switch | What it does |
 | --- | --- |
-| **Cloud or Local** | Cloud uses your own API key. Local uses a model on your PC through Ollama (or LM Studio and similar): Orynex finds the runtime, lists what you have, and otherwise recommends a model that fits your RAM and GPU and downloads it on one click. |
+| **Cloud or Local** | Cloud uses your own API key. Local uses a model on your PC through Ollama (or LM Studio and similar): Orynex finds the runtime, lists what you have, suggests models in three tiers by GPU memory, downloads one on a click and loads it right away, so the first answer does not wait. |
 | **Full Privacy** | Orynex sends nothing to an external AI or cloud service. Cloud AI is locked; tools that call outside services — web search, weather, news, mail, calendar, GitHub — are off; speech input, which uses a cloud transcription service, is off. |
 
 What makes that more than a label — each of these is a rule in code with a test
@@ -102,6 +103,11 @@ that fails if the rule is removed:
 - **Enough context.** Orynex asks Ollama for an 8 192-token context through its
   native API; left alone, Ollama cuts long prompts to 4 000 tokens on most GPUs
   without saying so.
+- **Measured on a real machine, not assumed.** On a 4 GB laptop GPU, a small local
+  model could not follow the extra "which area?" round Orynex uses to save cloud
+  tokens (0 of 12), but picked the right tool from the full list in 12 of 18 runs —
+  so local turns skip that round, since local tokens cost nothing. Preloading the
+  model cut the first answer from ~50 seconds to ~0.3.
 
 What it does **not** claim: that nothing leaves your PC. Windows, your other
 programs and a page you ask Orynex to open are not Orynex's to promise. A local
@@ -174,17 +180,17 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **1 128 tests** green, alongside a written architecture and a decision
+Currently **1 132 tests** green, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.4.6](https://github.com/70cacao/Orynex/releases/tag/v0.4.6)** — a
-pre-release, published on 17 September 2026. The local-model path is tested
-against a simulated runtime and not yet against a real Ollama installation; mail
-and calendar are not yet tried against real accounts. The release notes list what
-else is unfinished.
+**[Orynex 0.4.7](https://github.com/70cacao/Orynex/releases/tag/v0.4.7)** — a
+pre-release, published on 17 September 2026. The local path has been run against
+a real Ollama with a small model; larger models follow Ollama's published sizes
+and have not been run here. Mail and calendar are not yet tried against real
+accounts. The release notes list what else is unfinished.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run

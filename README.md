@@ -3,7 +3,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.3.1](https://github.com/70cacao/Orynex/releases/download/v0.3.1/Orynex_0.3.1_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.3.1)
+**[→ Download Orynex 0.4.6](https://github.com/70cacao/Orynex/releases/download/v0.4.6/Orynex_0.4.6_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.6)
+
+**New in 0.4.6: run the AI on your own PC, and a Full Privacy switch** — [see below](#cloud-or-local-and-full-privacy).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -28,9 +30,15 @@ registers one small helper that runs elevated. The assistant itself never does
 privilege broker (say yes — without it a few actions report themselves as
 unavailable), and start with Windows.
 
-**4 · Give it a key. Nothing works before this.** Open the workspace — hover the
-dot at the top edge, then the ⤢ button — and go to **Account → KI-Anbieter**.
-Paste an API key and press Verbinden. **The provider is detected from the key
+**4 · Choose where the AI runs. Nothing works before this.** Open the workspace —
+hover the dot at the top edge, then the ⤢ button — and go to **Account**.
+
+*Local:* install [Ollama](https://ollama.com/download), then in **KI: Cloud oder
+Lokal** pick a model you already have, or let Orynex recommend one for your PC and
+download it with one click. No key, no account.
+
+*Cloud:* under **KI-Anbieter (Cloud)**,
+paste an API key and press Verbinden. **The provider is detected from the key
 itself**, so there is nothing to choose: `gsk_…` is Groq, `sk-…` OpenAI or
 Anthropic, `AIza…` Google, and so on. The key is checked once against the
 provider and then goes into the Windows Credential Manager — never into a file,
@@ -55,14 +63,50 @@ and [Tauri v2](https://tauri.app) underneath, React and TypeScript on top, and i
 talks to the Windows APIs directly. **No Python, no second runtime** — one binary
 and an installer.
 
-Nothing leaves the machine except the call to the model provider. Conversation
-history, the searchable memory, the decision log and every learned pattern live
-in a local SQLite database.
+Conversation history, the searchable memory, the decision log and every learned
+pattern live in a local SQLite database. What leaves the machine is the request to
+the model — unless the model runs locally — and the calls a tool makes when you
+ask for something outside it, like the weather or your calendar. With Full Privacy
+on, Orynex makes neither.
 
-**You bring your own key.** Orynex has no server between you and the provider:
-your key goes into the Windows Credential Manager, and the client calls the
-provider directly. Six providers are supported, with tool calling, vision and
-streaming across all of them.
+**You bring your own key — or your own model.** Orynex has no server between you
+and the provider: your key goes into the Windows Credential Manager, and the
+client calls the provider directly. Six cloud providers are supported (Anthropic,
+OpenAI, OpenRouter, Groq, xAI, Google Gemini), with tool calling, vision and
+streaming across all of them — and local models through Ollama or any
+OpenAI-compatible server on your PC.
+
+## Cloud or Local, and Full Privacy
+
+Orynex owns the harness: the tools, the safety checks, the memory, the interface.
+The language model is a replaceable part. Two switches decide how much of it stays
+home.
+
+| Switch | What it does |
+| --- | --- |
+| **Cloud or Local** | Cloud uses your own API key. Local uses a model on your PC through Ollama (or LM Studio and similar): Orynex finds the runtime, lists what you have, and otherwise recommends a model that fits your RAM and GPU and downloads it on one click. |
+| **Full Privacy** | Orynex sends nothing to an external AI or cloud service. Cloud AI is locked; tools that call outside services — web search, weather, news, mail, calendar, GitHub — are off; speech input, which uses a cloud transcription service, is off. |
+
+What makes that more than a label — each of these is a rule in code with a test
+that fails if the rule is removed:
+
+- **No silent fallback.** If the local model fails, you get an error that says what
+  to do. Orynex never quietly asks a cloud provider instead, even with a key stored,
+  and Full Privacy never quietly changes your model either.
+- **Every model gets the same checks.** A local model is exactly as untrusted as a
+  cloud one: its tool calls pass the same kill switch, privacy gate, permission
+  check and argument validation.
+- **Local means this machine.** Local addresses are accepted on loopback only, no
+  API key is ever sent to a local server, and Ollama's own *cloud* models — which
+  answer on the same local port but compute elsewhere — are refused in Local mode.
+- **Enough context.** Orynex asks Ollama for an 8 192-token context through its
+  native API; left alone, Ollama cuts long prompts to 4 000 tokens on most GPUs
+  without saying so.
+
+What it does **not** claim: that nothing leaves your PC. Windows, your other
+programs and a page you ask Orynex to open are not Orynex's to promise. A local
+model can also be slower and less accurate than a large cloud model — the
+capabilities stay the same, how well a model uses them does not.
 
 ## Four stages, one application
 
@@ -78,10 +122,10 @@ It grows only as far as the task needs.
 ## What it can do
 
 Around thirty tools, grouped by area, each one declaring what it needs before it
-runs: start and focus applications, media and volume, system state, clipboard,
-web search and opening pages, RSS feeds, weather, reading Windows notifications
-and replying in a messenger, reading the screen, and a set of read-only GitHub
-tools.
+runs: start and focus applications and open folders, media and volume, system
+state, clipboard, web search and opening pages, RSS feeds, weather, reading mail
+and Google Calendar, reading Windows notifications and replying in a messenger,
+reading the screen, and a set of read-only GitHub tools.
 
 The model does not get a free hand. A shortlist round narrows thirty tools to the
 handful that could plausibly matter before any of them is offered, and a phrase
@@ -130,13 +174,17 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **816 tests** green, alongside a written architecture and a decision
+Currently **1 128 tests** green, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
+Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.3.1](https://github.com/70cacao/Orynex/releases/tag/v0.3.1)** — a
-pre-release, published on 8 September 2026.
+**[Orynex 0.4.6](https://github.com/70cacao/Orynex/releases/tag/v0.4.6)** — a
+pre-release, published on 17 September 2026. The local-model path is tested
+against a simulated runtime and not yet against a real Ollama installation; mail
+and calendar are not yet tried against real accounts. The release notes list what
+else is unfinished.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run

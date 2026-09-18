@@ -3,9 +3,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.4.10](https://github.com/70cacao/Orynex/releases/download/v0.4.10/Orynex_0.4.10_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.10)
+**[→ Download Orynex 0.4.11](https://github.com/70cacao/Orynex/releases/download/v0.4.11/Orynex_0.4.11_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.11)
 
-**New in 0.4.9 and 0.4.10: scenes** — *"Gaming"* ends Steam, switches to the fast power plan, pauses Spotify and brings Valorant to the front, from one chip or by typing its name. No AI involved, so no tokens and no wait — [see below](#scenes). Since 0.4.6 the AI can also run on your own PC, with a Full Privacy switch — [see below](#cloud-or-local-and-full-privacy).
+**New in 0.4.11: screen control is free**, behind its own switch — and when something someone else wrote has been read, Orynex asks before it clicks or types in another program. **New in 0.4.9 and 0.4.10: scenes** — *"Gaming"* ends Steam, switches to the fast power plan, pauses Spotify and brings Valorant to the front, from one chip or by typing its name. No AI involved, so no tokens and no wait — [see below](#scenes). Since 0.4.6 the AI can also run on your own PC, with a Full Privacy switch — [see below](#cloud-or-local-and-full-privacy).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -199,13 +199,13 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **1 183 tests** green, alongside a written architecture and a decision
+Currently **1 196 tests** green, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.4.10](https://github.com/70cacao/Orynex/releases/tag/v0.4.10)** — a
+**[Orynex 0.4.11](https://github.com/70cacao/Orynex/releases/tag/v0.4.11)** — a
 pre-release, published on 18 September 2026. Scenes have been driven by hand
 against a real desktop, including pressing one twice. The local path has been run against
 a real Ollama with a small model, and the fix in this release was measured

@@ -3,9 +3,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.4.9](https://github.com/70cacao/Orynex/releases/download/v0.4.9/Orynex_0.4.9_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.9)
+**[→ Download Orynex 0.4.10](https://github.com/70cacao/Orynex/releases/download/v0.4.10/Orynex_0.4.10_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.10)
 
-**New in 0.4.9: scenes** — *"Gaming"* starts Discord, pauses Spotify and brings Valorant to the front, from one chip or by typing its name. No AI involved, so no tokens and no wait — [see below](#scenes). Since 0.4.6 the AI can also run on your own PC, with a Full Privacy switch — [see below](#cloud-or-local-and-full-privacy).
+**New in 0.4.9 and 0.4.10: scenes** — *"Gaming"* ends Steam, switches to the fast power plan, pauses Spotify and brings Valorant to the front, from one chip or by typing its name. No AI involved, so no tokens and no wait — [see below](#scenes). Since 0.4.6 the AI can also run on your own PC, with a Full Privacy switch — [see below](#cloud-or-local-and-full-privacy).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -128,10 +128,12 @@ It grows only as far as the task needs.
 ## Scenes
 
 Several programs, one press. A scene is a name and up to six steps, and a step
-is one of four things: **start a program** (or bring it forward if it runs, or
-leave it alone if it already is — pressing twice starts nothing twice), **open a
-web address**, **open a Spotify search**, or **play, pause or skip in a named
-app**. Nothing else, on purpose: a scene runs days after it was written, with
+is one of these: **start a program** (or bring it forward if it runs, or leave it
+alone if it already is — pressing twice starts nothing twice), **open a web
+address**, **open a Spotify search**, **play, pause or skip in a named app**, and
+for a performance mode **end a program**, **switch the power plan** or **set the
+volume**. Ending is immediate and matches the executable's exact name, and
+Windows' own processes are never ended. Nothing else, on purpose: a scene runs days after it was written, with
 nobody watching, so every step has to mean the same thing tomorrow. A click on
 *"Send"* in another program does not — so scenes never click — and a play/pause
 *toggle* would start the music it was meant to stop, so there is none.
@@ -197,13 +199,13 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **1 176 tests** green, alongside a written architecture and a decision
+Currently **1 183 tests** green, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.4.9](https://github.com/70cacao/Orynex/releases/tag/v0.4.9)** — a
+**[Orynex 0.4.10](https://github.com/70cacao/Orynex/releases/tag/v0.4.10)** — a
 pre-release, published on 18 September 2026. Scenes have been driven by hand
 against a real desktop, including pressing one twice. The local path has been run against
 a real Ollama with a small model, and the fix in this release was measured

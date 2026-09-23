@@ -1,11 +1,13 @@
+<p align="center"><img src="orynex-mark.png" width="128" alt="Orynex"></p>
+
 # Orynex
 
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.4.11](https://github.com/70cacao/Orynex/releases/download/v0.4.11/Orynex_0.4.11_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.4.11)
+**[→ Download Orynex 0.5.5](https://github.com/70cacao/Orynex/releases/download/v0.5.5/Orynex_0.5.5_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.5.5)
 
-**New in 0.4.11: screen control is free**, behind its own switch — and when something someone else wrote has been read, Orynex asks before it clicks or types in another program. **New in 0.4.9 and 0.4.10: scenes** — *"Gaming"* ends Steam, switches to the fast power plan, pauses Spotify and brings Valorant to the front, from one chip or by typing its name. No AI involved, so no tokens and no wait — [see below](#scenes). Since 0.4.6 the AI can also run on your own PC, with a Full Privacy switch — [see below](#cloud-or-local-and-full-privacy).
+**New in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -41,7 +43,8 @@ and download it with one click. No key, no account.
 *Cloud:* under **KI-Anbieter (Cloud)**,
 paste an API key and press Verbinden. **The provider is detected from the key
 itself**, so there is nothing to choose: `gsk_…` is Groq, `sk-…` OpenAI or
-Anthropic, `AIza…` Google, and so on. The key is checked once against the
+Anthropic, `AIza…` Google, `nvapi-…` NVIDIA, and so on. With more than one key
+stored, a dropdown switches between them, and each remembers its model. The key is checked once against the
 provider and then goes into the Windows Credential Manager — never into a file,
 never into a log.
 
@@ -72,8 +75,8 @@ on, Orynex makes neither.
 
 **You bring your own key — or your own model.** Orynex has no server between you
 and the provider: your key goes into the Windows Credential Manager, and the
-client calls the provider directly. Six cloud providers are supported (Anthropic,
-OpenAI, OpenRouter, Groq, xAI, Google Gemini), with tool calling, vision and
+client calls the provider directly. Seven cloud providers are supported (Anthropic,
+OpenAI, OpenRouter, Groq, xAI, Google Gemini, NVIDIA), with tool calling, vision and
 streaming across all of them — and local models through Ollama or any
 OpenAI-compatible server on your PC.
 
@@ -147,10 +150,25 @@ between two steps.
 ## What it can do
 
 Around thirty tools, grouped by area, each one declaring what it needs before it
-runs: start and focus applications and open folders, media and volume, system
-state, clipboard, web search and opening pages, RSS feeds, weather, reading mail
-and Google Calendar, reading Windows notifications and replying in a messenger,
-reading the screen, and a set of read-only GitHub tools.
+runs: start and focus applications and open folders, reading folders and text
+files, media and volume, system state, clipboard, web search and opening pages,
+RSS feeds, weather, reading and sending mail and Google Calendar, reading Windows
+notifications and replying in a messenger, reading the screen, and a set of
+read-only GitHub tools.
+
+**Reading files** stops at a block list that is about what must never reach a
+model: SSH and cloud keys, `.env` files, password databases, browser profiles,
+messenger sessions, wallets and Orynex's own data. It is judged on the path as
+written *and* on where it really leads, so a shortcut or junction into a blocked
+folder is refused too. On a cloud route what a file contains goes to your
+provider — that is the price of the convenience, and it is stated here rather
+than hidden.
+
+**Sending mail** is off until you turn it on. Then every single message shows a
+card with each recipient, the subject and the full text, and goes out only on
+your click; an address you did not type yourself is marked. The yes is bound to
+exactly that message — change one character and it no longer counts. The kill
+switch and Full Privacy both stop it.
 
 The model does not get a free hand. A shortlist round narrows thirty tools to the
 handful that could plausibly matter before any of them is offered, and a phrase
@@ -199,19 +217,22 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-Currently **1 196 tests** green, alongside a written architecture and a decision
+**1 304 tests** green at the last full run, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.4.11](https://github.com/70cacao/Orynex/releases/tag/v0.4.11)** — a
-pre-release, published on 18 September 2026. Scenes have been driven by hand
-against a real desktop, including pressing one twice. The local path has been run against
-a real Ollama with a small model, and the fix in this release was measured
-through the app's own request builder rather than by hand; larger models follow
-Ollama's published sizes and have not been run here. Mail and calendar are not yet tried against real
-accounts, and the AI-driven half of cross-app automation is not built yet. The release notes list what else is unfinished.
+**[Orynex 0.5.5](https://github.com/70cacao/Orynex/releases/tag/v0.5.5)** — a
+pre-release, published on 23 September 2026. File reading, the blocked paths,
+switching providers and sending mail were driven through the running
+application against a real machine and a real mailbox (a declined card sent
+nothing, a confirmed one arrived once). Which model picks the file tool was
+measured before and after the change that fixed it, not assumed. The local path
+has been run against a real Ollama with a small model; larger models follow
+Ollama's published sizes and have not been run here. The calendar is not yet
+tried against a real account, and the AI-driven half of cross-app automation is
+not built yet. The release notes list what else is unfinished.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run

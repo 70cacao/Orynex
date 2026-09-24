@@ -5,9 +5,9 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.5.5](https://github.com/70cacao/Orynex/releases/download/v0.5.5/Orynex_0.5.5_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.5.5)
+**[→ Download Orynex 0.5.9](https://github.com/70cacao/Orynex/releases/download/v0.5.9/Orynex_0.5.9_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.5.9)
 
-**New in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
+**New in 0.5.9: say what a scene is for.** *"Orynex, mach mich bereit zum Zocken"* runs the scene you built for gaming — the AI picks one of your saved scenes by name, never writes its steps, and a scene that ends a program shows every step and waits for your click first. Replies to mail, and sending from iCloud and Microsoft 365. **Earlier in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -143,7 +143,7 @@ nobody watching, so every step has to mean the same thing tomorrow. A click on
 
 Make one in the settings, or say *"open discord and spotify"* in the chat and keep
 what happened under a name. It sits as a chip in the quick panel, and its name
-typed alone into the chat runs it — without the AI. Every step goes through the
+typed alone into the chat runs it — without the AI. **Or say what it is for**: *"mach mich bereit zum Zocken"* runs the scene called *zocken*. The AI can only pick one of your saved scenes by its name, never change what is in it, and a scene that ends a program shows a card with every step before anything runs. Measured with a cloud model: 8 of 10 times it picked the scene, the other two it asked back; a sentence without the scene's word does not find it — name a scene the way you would say it. Every step goes through the
 same permission checks as a tool the AI calls, and the kill switch stops a scene
 between two steps.
 
@@ -217,14 +217,18 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-**1 304 tests** green at the last full run, alongside a written architecture and a decision
+**1 331 tests** green at the last full run, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.5.5](https://github.com/70cacao/Orynex/releases/tag/v0.5.5)** — a
-pre-release, published on 23 September 2026. File reading, the blocked paths,
+**[Orynex 0.5.9](https://github.com/70cacao/Orynex/releases/tag/v0.5.9)** — a
+pre-release, published on 24 September 2026. Running a scene from a sentence was
+measured against a cloud model and driven twice through the running application
+(six of six steps, then five of six when Windows refused to bring one program to
+the front). Replies to mail and sending from iCloud and Microsoft 365 are not yet
+tried against real accounts. File reading, the blocked paths,
 switching providers and sending mail were driven through the running
 application against a real machine and a real mailbox (a declined card sent
 nothing, a confirmed one arrived once). Which model picks the file tool was

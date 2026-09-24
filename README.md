@@ -5,9 +5,11 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.5.9](https://github.com/70cacao/Orynex/releases/download/v0.5.9/Orynex_0.5.9_x64-setup.exe)** · Windows 11 · 87 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.5.9)
+**[→ Download Orynex 0.6.0](https://github.com/70cacao/Orynex/releases/download/v0.6.0/Orynex_0.6.0_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.6.0)
 
-**New in 0.5.9: say what a scene is for.** *"Orynex, mach mich bereit zum Zocken"* runs the scene you built for gaming — the AI picks one of your saved scenes by name, never writes its steps, and a scene that ends a program shows every step and waits for your click first. Replies to mail, and sending from iCloud and Microsoft 365. **Earlier in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
+**New in 0.6.0: automations.** Rules you write — *every morning at eight*, *when VALORANT starts* — with five risk rings deciding how far each may go while you are away: deleting, the screen and anything privileged never run without you, mail goes only to addresses on your own list, and everything above a rule's ring waits for your yes. Orynex suggests rules from habits it notices, and asks first. **It speaks** (the Windows voice, made on your PC), **it answers on Telegram** through your own bot, scenes switch **Windows settings** and run **your own commands and scripts** — never elevated, never written by the AI. A new look with real app icons and a scene editor you drag into order, and signed updates.
+
+**In 0.5.9: say what a scene is for.** *"Orynex, mach mich bereit zum Zocken"* runs the scene you built for gaming — the AI picks one of your saved scenes by name, never writes its steps, and a scene that ends a program shows every step and waits for your click first. Replies to mail, and sending from iCloud and Microsoft 365. **Earlier in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -223,8 +225,13 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.5.9](https://github.com/70cacao/Orynex/releases/tag/v0.5.9)** — a
-pre-release, published on 24 September 2026. Running a scene from a sentence was
+**[Orynex 0.6.0](https://github.com/70cacao/Orynex/releases/tag/v0.6.0)** — a
+pre-release, published on 25 September 2026. Automations, the risk rings and the
+rules for commands are covered by unit tests and mutation probes; which sentence
+reaches the rule tool was measured against a cloud model. The Windows voice, the app
+icons and the settings were made and read on a real machine. Telegram, a rule
+running overnight and the updater end to end are **not yet tried** with real
+accounts. Earlier, for 0.5.9: Running a scene from a sentence was
 measured against a cloud model and driven twice through the running application
 (six of six steps, then five of six when Windows refused to bring one program to
 the front). Replies to mail and sending from iCloud and Microsoft 365 are not yet

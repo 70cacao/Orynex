@@ -5,9 +5,11 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.9.1](https://github.com/70cacao/Orynex/releases/download/v0.9.1/Orynex_0.9.1_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.1)
+**[→ Download Orynex 0.9.2](https://github.com/70cacao/Orynex/releases/download/v0.9.2/Orynex_0.9.2_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.2)
 
-**New in 0.9.1: connections, flows, your phone.** Connect services over MCP or your own API from its OpenAPI description, and approve every capability one by one. Orynex writes to your Google Calendar after a second permission, with a card for every change. *„Take the text from the editor and send it to Tom“* becomes **one plan, one yes**, then runs without the AI. From away — Telegram or **your phone's browser**, HTTPS on your home network with its own certificate — a **traffic light** decides: green runs, yellow is checked by a second AI and then asks you, red never runs. The voice is **ElevenLabs on your own key** when you want it, the Windows voice otherwise, and Telegram answers a voice message by voice.
+**New in 0.9.2: a PC checkup.** Security, hardware, system and network — antivirus, firewall, updates, disk health, battery wear, event-log errors, startup programs, the network step by step — plus a short load test, in one report **ranked from good to bad**, with advice for every finding. It only reads, and it asks first. Speech now starts with the first sentence, read-aloud works in the installed app again, and the calendar has an easy way in: one secret iCal link, no Google project.
+
+**In 0.9.1: connections, flows, your phone.** Connect services over MCP or your own API from its OpenAPI description, and approve every capability one by one. Orynex writes to your Google Calendar after a second permission, with a card for every change. *„Take the text from the editor and send it to Tom“* becomes **one plan, one yes**, then runs without the AI. From away — Telegram or **your phone's browser**, HTTPS on your home network with its own certificate — a **traffic light** decides: green runs, yellow is checked by a second AI and then asks you, red never runs. The voice is **ElevenLabs on your own key** when you want it, the Windows voice otherwise, and Telegram answers a voice message by voice.
 
 **In 0.6.0: automations.** Rules you write — *every morning at eight*, *when VALORANT starts* — with five risk rings deciding how far each may go while you are away: deleting, the screen and anything privileged never run without you, mail goes only to addresses on your own list, and everything above a rule's ring waits for your yes. Orynex suggests rules from habits it notices, and asks first. **It speaks** (the Windows voice, made on your PC), **it answers on Telegram** through your own bot, scenes switch **Windows settings** and run **your own commands and scripts** — never elevated, never written by the AI. A new look with real app icons and a scene editor you drag into order, and signed updates.
 
@@ -227,8 +229,10 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.9.1](https://github.com/70cacao/Orynex/releases/tag/v0.9.1)** — a
-pre-release, published on 25 September 2026. Connections, the catalogue, the
+**[Orynex 0.9.2](https://github.com/70cacao/Orynex/releases/tag/v0.9.2)** — a
+pre-release, published on 26 September 2026. The PC checkup read all its values on
+a real machine and ran through the app with its warning card; speech, the checkup
+and sentence detection are covered by mutation probes. Earlier, for 0.9.1: Connections, the catalogue, the
 calendar's write side, flows, the traffic light, the phone door and the voice are
 covered by unit tests and 111 mutation probes, every rule covered; a real
 connection, the phone door and a yellow card from away were driven through the

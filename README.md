@@ -5,9 +5,11 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.6.0](https://github.com/70cacao/Orynex/releases/download/v0.6.0/Orynex_0.6.0_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.6.0)
+**[→ Download Orynex 0.9.1](https://github.com/70cacao/Orynex/releases/download/v0.9.1/Orynex_0.9.1_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.1)
 
-**New in 0.6.0: automations.** Rules you write — *every morning at eight*, *when VALORANT starts* — with five risk rings deciding how far each may go while you are away: deleting, the screen and anything privileged never run without you, mail goes only to addresses on your own list, and everything above a rule's ring waits for your yes. Orynex suggests rules from habits it notices, and asks first. **It speaks** (the Windows voice, made on your PC), **it answers on Telegram** through your own bot, scenes switch **Windows settings** and run **your own commands and scripts** — never elevated, never written by the AI. A new look with real app icons and a scene editor you drag into order, and signed updates.
+**New in 0.9.1: connections, flows, your phone.** Connect services over MCP or your own API from its OpenAPI description, and approve every capability one by one. Orynex writes to your Google Calendar after a second permission, with a card for every change. *„Take the text from the editor and send it to Tom“* becomes **one plan, one yes**, then runs without the AI. From away — Telegram or **your phone's browser**, HTTPS on your home network with its own certificate — a **traffic light** decides: green runs, yellow is checked by a second AI and then asks you, red never runs. The voice is **ElevenLabs on your own key** when you want it, the Windows voice otherwise, and Telegram answers a voice message by voice.
+
+**In 0.6.0: automations.** Rules you write — *every morning at eight*, *when VALORANT starts* — with five risk rings deciding how far each may go while you are away: deleting, the screen and anything privileged never run without you, mail goes only to addresses on your own list, and everything above a rule's ring waits for your yes. Orynex suggests rules from habits it notices, and asks first. **It speaks** (the Windows voice, made on your PC), **it answers on Telegram** through your own bot, scenes switch **Windows settings** and run **your own commands and scripts** — never elevated, never written by the AI. A new look with real app icons and a scene editor you drag into order, and signed updates.
 
 **In 0.5.9: say what a scene is for.** *"Orynex, mach mich bereit zum Zocken"* runs the scene you built for gaming — the AI picks one of your saved scenes by name, never writes its steps, and a scene that ends a program shows every step and waits for your click first. Replies to mail, and sending from iCloud and Microsoft 365. **Earlier in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
 
@@ -225,8 +227,14 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.6.0](https://github.com/70cacao/Orynex/releases/tag/v0.6.0)** — a
-pre-release, published on 25 September 2026. Automations, the risk rings and the
+**[Orynex 0.9.1](https://github.com/70cacao/Orynex/releases/tag/v0.9.1)** — a
+pre-release, published on 25 September 2026. Connections, the catalogue, the
+calendar's write side, flows, the traffic light, the phone door and the voice are
+covered by unit tests and 111 mutation probes, every rule covered; a real
+connection, the phone door and a yellow card from away were driven through the
+running application. Writing to a real calendar, a real phone, ElevenLabs and a
+voice reply on Telegram are **not yet tried** with real accounts. Earlier, for
+0.6.0: Automations, the risk rings and the
 rules for commands are covered by unit tests and mutation probes; which sentence
 reaches the rule tool was measured against a cloud model. The Windows voice, the app
 icons and the settings were made and read on a real machine. Telegram, a rule
@@ -241,9 +249,8 @@ application against a real machine and a real mailbox (a declined card sent
 nothing, a confirmed one arrived once). Which model picks the file tool was
 measured before and after the change that fixed it, not assumed. The local path
 has been run against a real Ollama with a small model; larger models follow
-Ollama's published sizes and have not been run here. The calendar is not yet
-tried against a real account, and the AI-driven half of cross-app automation is
-not built yet. The release notes list what else is unfinished.
+Ollama's published sizes and have not been run here. The calendar's read side is not yet
+tried against a real account. The release notes list what else is unfinished.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run

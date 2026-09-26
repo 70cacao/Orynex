@@ -5,9 +5,13 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.9.2](https://github.com/70cacao/Orynex/releases/download/v0.9.2/Orynex_0.9.2_x64-setup.exe)** · Windows 11 · 88 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.2)
+**[→ Download Orynex 0.9.3](https://github.com/70cacao/Orynex/releases/download/v0.9.3/Orynex_0.9.3_x64-setup.exe)** · Windows 11 · 93 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.3)
 
-**New in 0.9.2: a PC checkup.** Security, hardware, system and network — antivirus, firewall, updates, disk health, battery wear, event-log errors, startup programs, the network step by step — plus a short load test, in one report **ranked from good to bad**, with advice for every finding. It only reads, and it asks first. Speech now starts with the first sentence, read-aloud works in the installed app again, and the calendar has an easy way in: one secret iCal link, no Google project.
+> **Under construction.** 0.9.3 is a pre-release with known critical problems — they are listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.3) and get fixed next week.
+
+**New in 0.9.3: Orynex can call you.** A rule — or a test button — rings you on Telegram with a link; the call runs in your phone's browser, turn by turn, with the traffic light deciding what may run. **Piper, a free voice that runs on your PC,** installs in one click, every file checked against a pinned hash. Rules catch up once on what they missed while the PC was off, and react to a program ending, a nearly full disk, a low battery or heat. The checkup now looks its findings up online.
+
+**In 0.9.2: a PC checkup.** Security, hardware, system and network — antivirus, firewall, updates, disk health, battery wear, event-log errors, startup programs, the network step by step — plus a short load test, in one report **ranked from good to bad**, with advice for every finding. It only reads, and it asks first. Speech now starts with the first sentence, read-aloud works in the installed app again, and the calendar has an easy way in: one secret iCal link, no Google project.
 
 **In 0.9.1: connections, flows, your phone.** Connect services over MCP or your own API from its OpenAPI description, and approve every capability one by one. Orynex writes to your Google Calendar after a second permission, with a card for every change. *„Take the text from the editor and send it to Tom“* becomes **one plan, one yes**, then runs without the AI. From away — Telegram or **your phone's browser**, HTTPS on your home network with its own certificate — a **traffic light** decides: green runs, yellow is checked by a second AI and then asks you, red never runs. The voice is **ElevenLabs on your own key** when you want it, the Windows voice otherwise, and Telegram answers a voice message by voice.
 
@@ -229,8 +233,9 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.9.2](https://github.com/70cacao/Orynex/releases/tag/v0.9.2)** — a
-pre-release, published on 26 September 2026. The PC checkup read all its values on
+**[Orynex 0.9.3](https://github.com/70cacao/Orynex/releases/tag/v0.9.3)** — a
+pre-release under construction, published on 26 September 2026, with known
+critical problems listed in its release notes. Earlier, for 0.9.2: The PC checkup read all its values on
 a real machine and ran through the app with its warning card; speech, the checkup
 and sentence detection are covered by mutation probes. Earlier, for 0.9.1: Connections, the catalogue, the
 calendar's write side, flows, the traffic light, the phone door and the voice are

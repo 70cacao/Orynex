@@ -5,11 +5,13 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.9.3](https://github.com/70cacao/Orynex/releases/download/v0.9.3/Orynex_0.9.3_x64-setup.exe)** · Windows 11 · 93 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.3)
+**[→ Download Orynex 0.9.5](https://github.com/70cacao/Orynex/releases/download/v0.9.5/Orynex_0.9.5_x64-setup.exe)** · Windows 11 · 93 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5)
 
-> **Under construction.** 0.9.3 is a pre-release with known critical problems — they are listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.3) and get fixed next week.
+> **Under construction.** 0.9.5 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5).
 
-**New in 0.9.3: Orynex can call you.** A rule — or a test button — rings you on Telegram with a link; the call runs in your phone's browser, turn by turn, with the traffic light deciding what may run. **Piper, a free voice that runs on your PC,** installs in one click, every file checked against a pinned hash. Rules catch up once on what they missed while the PC was off, and react to a program ending, a nearly full disk, a low battery or heat. The checkup now looks its findings up online.
+**New in 0.9.5: big local models on small graphics cards, and an Orynex that knows you.** Orynex now runs llama.cpp next to Ollama — it finds the model files on your disk, says for each how it will run on your PC, installs llama.cpp and downloads a checked model in one click, and runs Mixture-of-Experts models like Ornith 1.5 35B-A3B on a 4 GB card with 16 GB of memory (measured: 22 of 22 tool choices right). It remembers dates you mention until they happen and what you tell it about yourself, a mail rule keeps what matters from new mail and sorts out ads, and a morning report waits at the first opening of the day. The circle can now rest wherever you put it; the bar opens at the top, centred.
+
+**In 0.9.3: Orynex can call you.** A rule — or a test button — rings you on Telegram with a link; the call runs in your phone's browser, turn by turn, with the traffic light deciding what may run. **Piper, a free voice that runs on your PC,** installs in one click, every file checked against a pinned hash. Rules catch up once on what they missed while the PC was off, and react to a program ending, a nearly full disk, a low battery or heat. The checkup now looks its findings up online.
 
 **In 0.9.2: a PC checkup.** Security, hardware, system and network — antivirus, firewall, updates, disk health, battery wear, event-log errors, startup programs, the network step by step — plus a short load test, in one report **ranked from good to bad**, with advice for every finding. It only reads, and it asks first. Speech now starts with the first sentence, read-aloud works in the installed app again, and the calendar has an easy way in: one secret iCal link, no Google project.
 
@@ -98,7 +100,7 @@ home.
 
 | Switch | What it does |
 | --- | --- |
-| **Cloud or Local** | Cloud uses your own API key. Local uses a model on your PC through Ollama (or LM Studio and similar): Orynex finds the runtime, lists what you have, suggests models in three tiers by GPU memory, downloads one on a click and loads it right away, so the first answer does not wait. |
+| **Cloud or Local** | Cloud uses your own API key. Local uses a model on your PC through Ollama, llama.cpp (installed and started in one click, Mixture-of-Experts models past the graphics card) or LM Studio: Orynex finds the runtime, lists what you have, suggests models in three tiers by GPU memory, downloads one on a click and loads it right away, so the first answer does not wait. |
 | **Full Privacy** | Orynex sends nothing to an external AI or cloud service. Cloud AI is locked; tools that call outside services — web search, weather, news, mail, calendar, GitHub — are off; speech input, which uses a cloud transcription service, is off. |
 
 What makes that more than a label — each of these is a rule in code with a test
@@ -227,15 +229,19 @@ own machine.
 Rust · Tauri v2 · React · TypeScript · SQLite (FTS5) · ONNX Runtime · native
 Windows APIs · NSIS
 
-**1 331 tests** green at the last full run, alongside a written architecture and a decision
+**1 756 tests** green at the last full run, alongside a written architecture and a decision
 log that records why things are the way they are rather than only what they do.
 Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.9.3](https://github.com/70cacao/Orynex/releases/tag/v0.9.3)** — a
-pre-release under construction, published on 26 September 2026, with known
-critical problems listed in its release notes. Earlier, for 0.9.2: The PC checkup read all its values on
+**[Orynex 0.9.5](https://github.com/70cacao/Orynex/releases/tag/v0.9.5)** — a
+pre-release under construction, published on 1 October 2026. Its new parts ran in the
+real application against real data before the release: llama.cpp started from the app, a
+checked 15.5 GB model download, a mail rule reading a real mail within four seconds, the
+quick panel taking the keyboard; the rules behind them are covered by 1 756 tests and 28
+mutation probes, every rule covered. Earlier, for 0.9.3: a pre-release with known critical
+problems, listed in its release notes. Earlier, for 0.9.2: The PC checkup read all its values on
 a real machine and ran through the app with its warning card; speech, the checkup
 and sentence detection are covered by mutation probes. Earlier, for 0.9.1: Connections, the catalogue, the
 calendar's write side, flows, the traffic light, the phone door and the voice are

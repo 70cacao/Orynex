@@ -5,13 +5,15 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.9.5](https://github.com/70cacao/Orynex/releases/download/v0.9.5/Orynex_0.9.5_x64-setup.exe)** · Windows 11 · 93 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5)
+**[→ Download Orynex 0.9.6](https://github.com/70cacao/Orynex/releases/download/v0.9.6/Orynex_0.9.6_x64-setup.exe)** · Windows 11 · 89 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.6)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-> **Under construction.** 0.9.5 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5).
+> **Under construction.** 0.9.6 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.6).
 
-**New in 0.9.5: big local models on small graphics cards, and an Orynex that knows you.** Orynex now runs llama.cpp next to Ollama — it finds the model files on your disk, says for each how it will run on your PC, installs llama.cpp and downloads a checked model in one click, and runs Mixture-of-Experts models like Ornith 1.5 35B-A3B on a 4 GB card with 16 GB of memory (measured: 22 of 22 tool choices right). It remembers dates you mention until they happen and what you tell it about yourself, a mail rule keeps what matters from new mail and sorts out ads, and a morning report waits at the first opening of the day. The circle can now rest wherever you put it; the bar opens at the top, centred.
+**New in 0.9.6: one window that changes shape, every connection listed, and no keys to the AI.** The circle grows into the bar flush at the top of the screen, and the quick panel drops out underneath it — one window the whole time; the full interface fades in and out. *Settings → Privatsphäre* lists every host Orynex connected to since it started; under Full Privacy with a local model it reads *"no connection left your home network"*. And files dragged into the chat now go through the same block list as reading files: `.env`, SSH keys, password safes and browser profiles are refused before anything is sent.
+
+**In 0.9.5: big local models on small graphics cards, and an Orynex that knows you.** Orynex now runs llama.cpp next to Ollama — it finds the model files on your disk, says for each how it will run on your PC, installs llama.cpp and downloads a checked model in one click, and runs Mixture-of-Experts models like Ornith 1.5 35B-A3B on a 4 GB card with 16 GB of memory (measured: 22 of 22 tool choices right). It remembers dates you mention until they happen and what you tell it about yourself, a mail rule keeps what matters from new mail and sorts out ads, and a morning report waits at the first opening of the day. The circle can now rest wherever you put it; the bar opens at the top, centred.
 
 **In 0.9.3: Orynex can call you.** A rule — or a test button — rings you on Telegram with a link; the call runs in your phone's browser, turn by turn, with the traffic light deciding what may run. **Piper, a free voice that runs on your PC,** installs in one click, every file checked against a pinned hash. Rules catch up once on what they missed while the PC was off, and react to a program ending, a nearly full disk, a low battery or heat. The checkup now looks its findings up online.
 
@@ -138,7 +140,7 @@ It grows only as far as the task needs.
 | | |
 | --- | --- |
 | **Orb** | A dot at the edge of the screen. Idle, ambient, out of the way. |
-| **Bar** | Hover it: CPU, GPU, memory, battery, media controls. |
+| **Bar** | Touch it and it grows into a bar flush at the top: CPU, GPU, memory, battery, media controls. |
 | **Quick panel** | One question, or one of the programs you named yourself. |
 | **Workspace** | The full window — chat, tools, memory, decision log, settings. |
 
@@ -237,8 +239,11 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.9.5](https://github.com/70cacao/Orynex/releases/tag/v0.9.5)** — a
-pre-release under construction, published on 1 October 2026. Its new parts ran in the
+**[Orynex 0.9.6](https://github.com/70cacao/Orynex/releases/tag/v0.9.6)** — a
+pre-release under construction, published on 1 October 2026 in the evening. Its new parts
+were filmed in the real application for the shorts on the channel: the morph frame by frame,
+the connection list from a fresh start in cloud mode and under Full Privacy, key files
+refused in the chat; 1 773 tests. Earlier, for 0.9.5, its new parts ran in the
 real application against real data before the release: llama.cpp started from the app, a
 checked 15.5 GB model download, a mail rule reading a real mail within four seconds, the
 quick panel taking the keyboard; the rules behind them are covered by 1 756 tests and 28

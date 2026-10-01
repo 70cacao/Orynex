@@ -7,6 +7,8 @@ it acts on the machine, and it keeps what it learns on the machine.
 
 **[→ Download Orynex 0.9.5](https://github.com/70cacao/Orynex/releases/download/v0.9.5/Orynex_0.9.5_x64-setup.exe)** · Windows 11 · 93 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5)
 
+**[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
+
 > **Under construction.** 0.9.5 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.5).
 
 **New in 0.9.5: big local models on small graphics cards, and an Orynex that knows you.** Orynex now runs llama.cpp next to Ollama — it finds the model files on your disk, says for each how it will run on your PC, installs llama.cpp and downloads a checked model in one click, and runs Mixture-of-Experts models like Ornith 1.5 35B-A3B on a 4 GB card with 16 GB of memory (measured: 22 of 22 tool choices right). It remembers dates you mention until they happen and what you tell it about yourself, a mail rule keeps what matters from new mail and sorts out ads, and a morning report waits at the first opening of the day. The circle can now rest wherever you put it; the bar opens at the top, centred.

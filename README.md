@@ -5,13 +5,15 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.9.9](https://github.com/70cacao/Orynex/releases/download/v0.9.9/Orynex_0.9.9_x64-setup.exe)** · Windows 11 · 91 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.9)
+**[→ Download Orynex 0.9.10](https://github.com/70cacao/Orynex/releases/download/v0.9.10/Orynex_0.9.10_x64-setup.exe)** · Windows 11 · 91 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.10)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-> **Under construction.** 0.9.9 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.9).
+> **Under construction.** 0.9.10 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.9.10).
 
-**New in 0.9.9: it keeps going when your provider says stop.** Free AI keys run into limits, and that used to end the answer. Switch on *Switch at limit* and Orynex goes on with your next provider instead — only at a limit, your other providers' strong models first, then the smaller one, and if you want, the AI on your own PC as the last stop. You choose who takes part and in which order; every switch is said out loud, because the provider that takes over sees the conversation. Also: the searchable memory opens, so you can see everything Orynex can draw on; fewer random memories under an answer; OpenRouter's free models fail clearly instead of silently; and the phone pairing shows its code again.
+**New in 0.9.10: timers, a notepad, and news that comes to you.** Say *"set a timer for 10 minutes"* or *"wake me at 7"* — a timer survives a restart and reaches you in a game, at night, or on Telegram when you are away. A stopwatch, a notepad that is yours (apart from what Orynex remembers), and a clipboard history that is **off until you turn it on**, keeps 50 entries for a day on this PC and never reads what a password manager marks. Watchers now follow news too: a feed or a page that links one, optionally only entries with your words.
+
+**In 0.9.9: it keeps going when your provider says stop.** Free AI keys run into limits, and that used to end the answer. Switch on *Switch at limit* and Orynex goes on with your next provider instead — only at a limit, your other providers' strong models first, then the smaller one, and if you want, the AI on your own PC as the last stop. You choose who takes part and in which order; every switch is said out loud, because the provider that takes over sees the conversation. Also: the searchable memory opens, so you can see everything Orynex can draw on; fewer random memories under an answer; OpenRouter's free models fail clearly instead of silently; and the phone pairing shows its code again.
 
 **In 0.9.8: it learns from your mail, and it speaks first.** After Orynex reads your mail it keeps what matters — an interview on Thursday at two, a deadline, something about you — and shows each under the answer with **Undo**; with your permission an appointment goes straight into your calendar. It knows whether you are at the PC (from when you last touched mouse or keyboard, never what you typed): away, what matters reaches you on Telegram, at night only what can't wait, everything said once. Watchers keep an eye on a product page and speak once when the price drops. Your projects live as one line each and are rewritten when you close the chat. Ask about *yesterday* or *last summer* and it looks only there. And a first start that guides you, every step skippable.
 

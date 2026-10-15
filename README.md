@@ -5,13 +5,15 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.11.1](https://github.com/70cacao/Orynex/releases/download/v0.11.1/Orynex_0.11.1_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.11.1)
+**[→ Download Orynex 0.11.2](https://github.com/70cacao/Orynex/releases/download/v0.11.2/Orynex_0.11.2_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.11.2)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-> **Under construction.** 0.11.1 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.11.1).
+> **Under construction.** 0.11.2 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.11.2).
 
-**New in 0.11.1: companion fixes, and photos that never leave your PC.** The companion no longer gets stuck "working" and always sleeps on its pillow. And a new add-on, **Lokale Bilder**: with Ollama or llama.cpp, a small image model on your own PC describes photos — in the chat and with `/food` — and only the words go to your AI; while it is on, no photo leaves your PC.
+**New in 0.11.2: writing a mail by phone call, fixed.** Call Orynex, say *„schreib Micha eine Mail …“* or *„schreib mir …“*, and it finds the address in your contacts or your own account, reads the mail back aloud and sends it when you say *„ja“*, even when your free AI tier runs out halfway and the next provider has to take over.
+
+**In 0.11.1: companion fixes, and photos that never leave your PC.** The companion no longer gets stuck "working" and always sleeps on its pillow. And a new add-on, **Lokale Bilder**: with Ollama or llama.cpp, a small image model on your own PC describes photos — in the chat and with `/food` — and only the words go to your AI; while it is on, no photo leaves your PC.
 
 **In 0.11.0: a wardrobe for the companion, add-ons, and trackers.** Dress the companion — hats, glasses, capes, wings, six colours — in a little fitting room where you can try everything on first; all colours, the pillow and the nightcap are free, plus one bundle you pick, and holiday costumes put themselves on in season. A new **Add-ons** page: switch off what you do not use, and it does not run at all — no background work, no tools offered to the AI, fewer tokens per message. **Trackers** for food, water, training, sleep, habits or your own values: a year of dots at a glance (sleep by hours, water by how close you came), a ranking of what you keep best, reminders at your own time — as a notice or as a call — and quick commands like `/wasser 500` or `/food 650 kcal` that need no AI at all. Health data stays on this PC and never enters Orynex' memory. And **Cloudflare Workers AI** as a provider: paste a token, Orynex finds your account itself.
 

@@ -5,13 +5,15 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.12.0](https://github.com/70cacao/Orynex/releases/download/v0.12.0/Orynex_0.12.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.0)
+**[→ Download Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/download/v0.12.1/Orynex_0.12.1_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-> **Under construction.** 0.12.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.0).
+> **Under construction.** 0.12.1 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1).
 
-**New in 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
+**New in 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
+
+**In 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
 
 **In 0.11.2: writing a mail by phone call, fixed.** Call Orynex, say *„schreib Micha eine Mail …“* or *„schreib mir …“*, and it finds the address in your contacts or your own account, reads the mail back aloud and sends it when you say *„ja“*, even when your free AI tier runs out halfway and the next provider has to take over.
 

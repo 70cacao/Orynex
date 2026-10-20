@@ -302,8 +302,10 @@ What you can check instead: the [VirusTotal scan of this installer](https://www.
 engine's result for exactly the file behind the download link (SHA-256
 `d9fd60fc…5755f`). Scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
-signature. Unsigned installers draw that kind of hit; the scan shows every result
-rather than asking you to take our word.
+signature. The large engines all report it clean: Microsoft Defender, Kaspersky,
+Bitdefender, ESET, Avast, AVG, Malwarebytes, Sophos, Symantec (Norton), CrowdStrike,
+SentinelOne, Avira and F-Secure. Unsigned installers draw that kind of single hit; the
+scan shows every result rather than asking you to take our word.
 
 ## Licence
 

@@ -5,7 +5,7 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/download/v0.12.1/Orynex_0.12.1_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1)
+**[→ Download Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/download/v0.12.1/Orynex_0.12.1_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1) · [VirusTotal scan](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
@@ -298,6 +298,12 @@ It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
+What you can check instead: the [VirusTotal scan of this installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f) — every
+engine's result for exactly the file behind the download link (SHA-256
+`d9fd60fc…5755f`). Scanned 20 October 2026: **1 of 63** engines flagged it —
+Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
+signature. Unsigned installers draw that kind of hit; the scan shows every result
+rather than asking you to take our word.
 
 ## Licence
 

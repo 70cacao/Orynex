@@ -15,6 +15,9 @@ it acts on the machine, and it keeps what it learns on the machine.
 
 **In 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
 
+<details>
+<summary><b>Earlier versions</b> — 0.11.2 back to 0.5.9</summary>
+
 **In 0.11.2: writing a mail by phone call, fixed.** Call Orynex, say *„schreib Micha eine Mail …“* or *„schreib mir …“*, and it finds the address in your contacts or your own account, reads the mail back aloud and sends it when you say *„ja“*, even when your free AI tier runs out halfway and the next provider has to take over.
 
 **In 0.11.1: companion fixes, and photos that never leave your PC.** The companion no longer gets stuck "working" and always sleeps on its pillow. And a new add-on, **Lokale Bilder**: with Ollama or llama.cpp, a small image model on your own PC describes photos — in the chat and with `/food` — and only the words go to your AI; while it is on, no photo leaves your PC.
@@ -44,6 +47,8 @@ it acts on the machine, and it keeps what it learns on the machine.
 **In 0.6.0: automations.** Rules you write — *every morning at eight*, *when VALORANT starts* — with five risk rings deciding how far each may go while you are away: deleting, the screen and anything privileged never run without you, mail goes only to addresses on your own list, and everything above a rule's ring waits for your yes. Orynex suggests rules from habits it notices, and asks first. **It speaks** (the Windows voice, made on your PC), **it answers on Telegram** through your own bot, scenes switch **Windows settings** and run **your own commands and scripts** — never elevated, never written by the AI. A new look with real app icons and a scene editor you drag into order, and signed updates.
 
 **In 0.5.9: say what a scene is for.** *"Orynex, mach mich bereit zum Zocken"* runs the scene you built for gaming — the AI picks one of your saved scenes by name, never writes its steps, and a scene that ends a program shows every step and waits for your click first. Replies to mail, and sending from iCloud and Microsoft 365. **Earlier in 0.5: Orynex reads files.** *"What's in this folder"*, *"read me the README"* — anywhere on your disk except keys, passwords, browser and messenger data, which are refused however the request is worded. **It can send mail**, from the account it already reads, behind its own switch and with a card showing the whole message before each one goes out. **A second provider is one click away:** keep several API keys and switch between them, choose the model by hand, and NVIDIA's catalogue is supported. Speech input sends directly when Orynex is not in front — press, speak, read the answer without leaving your game. And a new look. Earlier: screen control behind a switch (0.4.11), [scenes](#scenes) (0.4.9), [local AI and Full Privacy](#cloud-or-local-and-full-privacy) (0.4.6).
+
+</details>
 
 **Status: pre-release, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
@@ -259,40 +264,16 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.9.6](https://github.com/70cacao/Orynex/releases/tag/v0.9.6)** — a
-pre-release under construction, published on 1 October 2026 in the evening. Its new parts
-were filmed in the real application for the shorts on the channel: the morph frame by frame,
-the connection list from a fresh start in cloud mode and under Full Privacy, key files
-refused in the chat; 1 773 tests. Earlier, for 0.9.5, its new parts ran in the
-real application against real data before the release: llama.cpp started from the app, a
-checked 15.5 GB model download, a mail rule reading a real mail within four seconds, the
-quick panel taking the keyboard; the rules behind them are covered by 1 756 tests and 28
-mutation probes, every rule covered. Earlier, for 0.9.3: a pre-release with known critical
-problems, listed in its release notes. Earlier, for 0.9.2: The PC checkup read all its values on
-a real machine and ran through the app with its warning card; speech, the checkup
-and sentence detection are covered by mutation probes. Earlier, for 0.9.1: Connections, the catalogue, the
-calendar's write side, flows, the traffic light, the phone door and the voice are
-covered by unit tests and 111 mutation probes, every rule covered; a real
-connection, the phone door and a yellow card from away were driven through the
-running application. Writing to a real calendar, a real phone, ElevenLabs and a
-voice reply on Telegram are **not yet tried** with real accounts. Earlier, for
-0.6.0: Automations, the risk rings and the
-rules for commands are covered by unit tests and mutation probes; which sentence
-reaches the rule tool was measured against a cloud model. The Windows voice, the app
-icons and the settings were made and read on a real machine. Telegram, a rule
-running overnight and the updater end to end are **not yet tried** with real
-accounts. Earlier, for 0.5.9: Running a scene from a sentence was
-measured against a cloud model and driven twice through the running application
-(six of six steps, then five of six when Windows refused to bring one program to
-the front). Replies to mail and sending from iCloud and Microsoft 365 are not yet
-tried against real accounts. File reading, the blocked paths,
-switching providers and sending mail were driven through the running
-application against a real machine and a real mailbox (a declined card sent
-nothing, a confirmed one arrived once). Which model picks the file tool was
-measured before and after the change that fixed it, not assumed. The local path
-has been run against a real Ollama with a small model; larger models follow
-Ollama's published sizes and have not been run here. The calendar's read side is not yet
-tried against a real account. The release notes list what else is unfinished.
+**[Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/tag/v0.12.1)** — a
+pre-release under construction, published on 16 October 2026. Its new parts were
+measured on a real machine before the release: a 2560-pixel screenshot of 1.2 MB goes
+out as about 100 KB, a phone photo as 185–320 KB, in about a twentieth of a second; the
+picture model of a real provider (Groq) was found in its live model list and described a
+test picture in under a second. What is known not to work yet is listed at the end of
+the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1); every
+earlier version has its own notes, with what was tested and what was not, under
+[Releases](https://github.com/70cacao/Orynex/releases). Pre-releases do not reach the
+built-in updater: install over the previous version, your data stays.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run

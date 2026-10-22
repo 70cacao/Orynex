@@ -5,18 +5,20 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/download/v0.12.1/Orynex_0.12.1_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1) · [VirusTotal scan](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
+**[→ Download Orynex 0.13.0](https://github.com/70cacao/Orynex/releases/download/v0.13.0/Orynex_0.13.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-> **Under construction.** 0.12.1 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1).
+> **Under construction.** 0.13.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0).
 
-**New in 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
+**New in 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.
 
-**In 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
+**In 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
 
 <details>
-<summary><b>Earlier versions</b> — 0.11.2 back to 0.5.9</summary>
+<summary><b>Earlier versions</b> — 0.12.0 back to 0.5.9</summary>
+
+**In 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
 
 **In 0.11.2: writing a mail by phone call, fixed.** Call Orynex, say *„schreib Micha eine Mail …“* or *„schreib mir …“*, and it finds the address in your contacts or your own account, reads the mail back aloud and sends it when you say *„ja“*, even when your free AI tier runs out halfway and the next provider has to take over.
 
@@ -264,13 +266,14 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.12.1](https://github.com/70cacao/Orynex/releases/tag/v0.12.1)** — a
-pre-release under construction, published on 16 October 2026. Its new parts were
-measured on a real machine before the release: a 2560-pixel screenshot of 1.2 MB goes
-out as about 100 KB, a phone photo as 185–320 KB, in about a twentieth of a second; the
-picture model of a real provider (Groq) was found in its live model list and described a
-test picture in under a second. What is known not to work yet is listed at the end of
-the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.12.1); every
+**[Orynex 0.13.0](https://github.com/70cacao/Orynex/releases/tag/v0.13.0)** — a
+pre-release under construction, published on 22 October 2026. Its new parts passed
+2,237 tests and mutation probes, and were checked in a test copy of the app next to a
+real one: the answer-language rule was measured against a real model (8 of 8 answers
+in German with it, 0 of 8 without), and every read-only tool ran once against a real
+machine (20 of 23 answered; of the other three, two need a setting and one always asks first). Several new parts have not yet
+been used for real; they are listed at the end of the
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). Pre-releases do not reach the
 built-in updater: install over the previous version, your data stays.
@@ -279,9 +282,10 @@ It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
-What you can check instead: the [VirusTotal scan of this installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f) — every
-engine's result for exactly the file behind the download link (SHA-256
-`d9fd60fc…5755f`). Scanned 20 October 2026: **1 of 63** engines flagged it —
+What you can check instead: a VirusTotal scan of every installer. The scan of
+0.13.0 follows here once it has run; the last one, of the
+[0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
+(SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
 signature. The large engines all report it clean: Microsoft Defender, Kaspersky,
 Bitdefender, ESET, Avast, AVG, Malwarebytes, Sophos, Symantec (Norton), CrowdStrike,

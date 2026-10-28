@@ -9,6 +9,8 @@ it acts on the machine, and it keeps what it learns on the machine.
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
+**[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
+
 > **Under construction.** 0.13.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0).
 
 **New in 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.

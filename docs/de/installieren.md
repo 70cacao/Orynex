@@ -18,13 +18,13 @@ Wie viel Arbeitsspeicher und Prozessor Orynex im Alltag braucht, ist noch nicht 
 
 Den Installer gibt es auf der [Release-Seite](https://github.com/70cacao/Orynex/releases/latest): `Orynex_<Version>_x64-setup.exe`.
 
-**Ob die Datei echt ist, kannst du prüfen.** In den Release-Notizen steht ihre SHA-256-Prüfsumme. In PowerShell:
+**Ob die Datei echt ist, kannst du prüfen.** Auf der Release-Seite steht neben jeder Datei ihre SHA-256-Prüfsumme (`sha256:…`). In PowerShell:
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\Orynex_0.13.0_x64-setup.exe"
+Get-FileHash "$env:USERPROFILE\Downloads\Orynex_*_x64-setup.exe"
 ```
 
-Stimmt die angezeigte Zahl mit der in den Release-Notizen überein, ist es genau die Datei, die veröffentlicht wurde.
+Stimmt die angezeigte Zahl mit der auf der Release-Seite überein, ist es genau die Datei, die veröffentlicht wurde.
 
 ## 2 · Die Warnung von Windows („Der Computer wurde durch Windows geschützt“)
 

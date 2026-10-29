@@ -18,13 +18,13 @@ How much memory and processor Orynex uses day to day has not been measured yet. 
 
 The installer is on the [release page](https://github.com/70cacao/Orynex/releases/latest): `Orynex_<version>_x64-setup.exe`.
 
-**You can check that the file is genuine.** The release notes give its SHA-256 checksum. In PowerShell:
+**You can check that the file is genuine.** The release page shows each file's SHA-256 checksum next to it (`sha256:…`). In PowerShell:
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\Orynex_0.13.0_x64-setup.exe"
+Get-FileHash "$env:USERPROFILE\Downloads\Orynex_*_x64-setup.exe"
 ```
 
-If the number shown matches the one in the release notes, it is exactly the file that was published.
+If the number shown matches the one on the release page, it is exactly the file that was published.
 
 ## 2 · The Windows warning ("Windows protected your PC")
 

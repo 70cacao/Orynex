@@ -6,7 +6,7 @@ What Orynex 1.0 deliberately cannot do yet, or where there is a risk we know and
 
 | Limit | Why |
 | --- | --- |
-| The installer is not signed; Windows SmartScreen warns on the first start ([what to do](install.md#2--the-windows-warning-windows-protected-your-pc)). The checksums are on the release page next to each file; the updates themselves are signed.| a certificate costs money every year; Orynex is a private project |
+| The installer is not signed; Windows SmartScreen warns on the first start ([what to do](install.md#2--the-windows-warning-windows-protected-your-pc)). The checksums are on the release page next to each file; the updates themselves are signed. | a certificate costs money every year; Orynex is a private project |
 | Installing and every update need an admin password. | Orynex lives in `Program Files` so that no program can change it; the helper for admin actions relies on that |
 | Anthropic and Google Gemini are checked with automated tests only, not with a real key. OpenAI and xAI use the same path as Groq. | no key to test with |
 | NVIDIA no longer accepts a new key. | NVIDIA's terms allow the free access for development only |

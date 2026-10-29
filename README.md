@@ -5,20 +5,22 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.13.0](https://github.com/70cacao/Orynex/releases/download/v0.13.0/Orynex_0.13.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0)
+**[→ Download Orynex 0.14.0](https://github.com/70cacao/Orynex/releases/download/v0.14.0/Orynex_0.14.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **Under construction.** 0.13.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0).
+> **Under construction.** 0.14.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0).
 
-**New in 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.
+**New in 0.14.0: steadier, easier to quit, and English all the way down.** A *Quit* button in the sidebar; typing no longer lands in the program behind Orynex; a broken settings file or an odd watcher answer no longer stops it; an answer that breaks off keeps its text and continues; calls stay reachable when the Wi-Fi changes; the activity page filters by where a run came from; a local log with a report you send yourself; and every error message in the app's language.
 
-**In 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
+**In 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.
 
 <details>
-<summary><b>Earlier versions</b> — 0.12.0 back to 0.5.9</summary>
+<summary><b>Earlier versions</b> — 0.12.1 back to 0.5.9</summary>
+
+**In 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
 
 **In 0.12.0: a faster local AI, and no more second windows.** A switch *Nachdenken lassen*, off by default: a local model that can think answers straight away, about three times as fast on average with `qwen3.5:9b`. An automation that starts a program brings it to the front when it is already open instead of opening it again. And the smaller model no longer takes over after a quiet hour: at a limit, Orynex first goes to the same size of model at your next provider.
 
@@ -268,24 +270,24 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.13.0](https://github.com/70cacao/Orynex/releases/tag/v0.13.0)** — a
-pre-release under construction, published on 22 October 2026. Its new parts passed
-2,237 tests and mutation probes, and were checked in a test copy of the app next to a
-real one: the answer-language rule was measured against a real model (8 of 8 answers
-in German with it, 0 of 8 without), and every read-only tool ran once against a real
-machine (20 of 23 answered; of the other three, two need a setting and one always asks first). Several new parts have not yet
-been used for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v0.13.0); every
+**[Orynex 0.14.0](https://github.com/70cacao/Orynex/releases/tag/v0.14.0)** — a
+pre-release under construction, published on 29 October 2026. It is mostly fixes: 2,308
+tests and mutation probes passed, every older database upgrades with its data, garbage
+in every input and every tool argument was tried without a crash, and the crash that
+froze parallel test runs was reproduced and fixed. Several parts have not yet been used
+for real; they are listed at the end of the
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0); every
 earlier version has its own notes, with what was tested and what was not, under
-[Releases](https://github.com/70cacao/Orynex/releases). Pre-releases do not reach the
-built-in updater: install over the previous version, your data stays.
+[Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
+button finds new versions (it asks for an administrator password, because Orynex
+installs for all users); or install over the previous version, your data stays.
 
 It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of
-0.13.0 follows here once it has run; the last one, of the
+0.14.0 follows here once it has run; the last one, of the
 [0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 (SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known

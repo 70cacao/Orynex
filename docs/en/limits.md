@@ -16,10 +16,10 @@ What Orynex 1.0 deliberately cannot do yet, or where there is a risk we know and
 | *Stop* ends the wait for the AI at once; a tool that is already running finishes. | a half-run tool would be worse |
 | Tasks run only while Orynex runs. After a restart, a running task shows as *interrupted* and is not resumed; a step that changed something and has no recorded end is *unclear* and is never repeated by itself. | resuming comes later |
 | llama.cpp and LM Studio are experimental; Ollama is the measured local path. Local models are slower and less accurate than large cloud models. | not measured |
-| Your own connections (MCP, OpenAPI) are experimental. | the full proof of permissions is still open |
+| Your own connections (MCP, OpenAPI) are experimental. | the permissions are checked (no connection silently widens what Orynex may do), but they have seen little use with real servers |
 | The phone browser (Orynex on your home network) is hidden in 1.0. | only half built |
 | There is no button yet that deletes everything including keys; uninstalling leaves data and keys behind on purpose ([how to do it by hand](permissions-and-data.md#backup-and-deletion)). | in progress |
-| Some error messages appear in German even when the app is set to English. | being translated |
+| In 0.14 a few lines are still German when the app is set to English: the entries on the *Log* page and the message for a switched-off add-on. The error messages themselves are translated since 0.14. | translated, comes with the next version |
 | Mail: Outlook.com and Hotmail accounts do not work; Orynex cannot send attachments. | Microsoft switched off password sign-in |
 | What a cloud AI does with your messages is governed by your provider's terms. With a local AI and Full Privacy nothing goes out. | Orynex has no server of its own and sees none of it |
 | How much memory and processor Orynex uses over hours has not been measured yet. | planned before 1.0 |

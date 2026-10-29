@@ -31,6 +31,8 @@ Zuerst lohnt ein Blick auf *Übersicht → Selbsttest*. Dort steht für KI, Spei
 
 Ist eine Kombination schon von einem anderen Programm belegt, bleibt die bisherige aktiv, und Orynex sagt es (beim Not-Aus mit einem Hinweis oben im Fenster). Unter *Einstellungen → Verhalten* eine andere wählen.
 
+**Bis 0.13:** Wer Orynex per Klick auf die Leiste geöffnet hat, konnte unter *Verhalten* kein Kürzel aufnehmen — die Tasten gingen an das Programm dahinter. Ab 0.14 behoben; in 0.13 Orynex stattdessen mit dem Tastenkürzel öffnen.
+
 ## Benachrichtigungen fehlen
 
 Das Lesen muss unter *Einstellungen → Privatsphäre* eingeschaltet sein, und Windows fragt beim ersten Mal noch einmal selbst um Erlaubnis.

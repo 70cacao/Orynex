@@ -31,6 +31,8 @@ Start with *Overview → Self-check*. It shows for the AI, storage, web search, 
 
 If another program already uses a combination, the previous one stays active and Orynex says so (for the kill switch with a notice at the top of the window). Pick another under *Settings → Behaviour*.
 
+**Up to 0.13:** if you opened Orynex by clicking the bar, recording a shortcut under *Behaviour* did nothing — the keys went to the program behind it. Fixed in 0.14; in 0.13 open Orynex with its shortcut instead.
+
 ## Notifications are missing
 
 Reading them must be switched on under *Settings → Privacy*, and Windows asks once more for permission itself the first time.

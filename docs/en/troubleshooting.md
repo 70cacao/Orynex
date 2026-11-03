@@ -41,8 +41,8 @@ Reading them must be switched on under *Settings → Privacy*, and Windows asks 
 
 | Message | means |
 | --- | --- |
-| *"GitHub delivered no update information right now"* (currently still shown in German) | a problem on GitHub's side; try again later |
-| *"GitHub cannot be reached"* / *"The download broke off"* | check the internet connection, try again |
+| *"GitHub delivered no update information right now"* | a problem on GitHub's side; try again later |
+| *"GitHub cannot be reached"* / *"The update download broke off"* | check the internet connection, try again |
 | *"The update carries no valid signature"* | Orynex deliberately does not install it; please report it ([Security](../../SECURITY.md)) |
 | Windows asks for an admin password | normal: Orynex lives in `Program Files` ([why](install.md#3--the-installer)) |
 

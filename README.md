@@ -5,20 +5,27 @@
 A Windows 11 desktop assistant that lives at the edge of your screen. It answers,
 it acts on the machine, and it keeps what it learns on the machine.
 
-**[→ Download Orynex 0.14.0](https://github.com/70cacao/Orynex/releases/download/v0.14.0/Orynex_0.14.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0)
+**Orynex 1.0 is here.** Free to use, no account, no subscription, no server of ours in
+between. Your own key or your own model, over sixty tools, whole tasks in the background,
+Telegram and phone calls from anywhere, rules that run without you, and a kill switch
+for all of it.
+
+**[→ Download Orynex 1.0.0](https://github.com/70cacao/Orynex/releases/download/v1.0.0/Orynex_1.0.0_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.0)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **Under construction.** 0.14.0 is a pre-release; what is still missing is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0).
+> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.0) and on the [limits page](docs/en/limits.md).
 
-**New in 0.14.0: steadier, easier to quit, and English all the way down.** A *Quit* button in the sidebar; typing no longer lands in the program behind Orynex; a broken settings file or an odd watcher answer no longer stops it; an answer that breaks off keeps its text and continues; calls stay reachable when the Wi-Fi changes; the activity page filters by where a run came from; a local log with a report you send yourself; and every error message in the app's language.
+**New in 1.0: tasks that finish, files you can keep, and a way out of a frozen window.** Built on four days of real use. Tasks are rebuilt, step by step, and wait out a provider's limit; a report can be copied, saved as PDF or sent to your own Telegram or mail. Orynex can write PDF, Word and PowerPoint files, read a web page instead of guessing from search results, and play the song you asked for on Spotify. If the window ever stops responding, a separate dialog offers to end it. Memory no longer learns the same thing four times, and addresses and phone numbers from mail stay out of your requests.
 
-**In 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.
+**In 0.14.0: steadier, easier to quit, and English all the way down.** A *Quit* button in the sidebar; typing no longer lands in the program behind Orynex; a broken settings file or an odd watcher answer no longer stops it; an answer that breaks off keeps its text and continues; calls stay reachable when the Wi-Fi changes; the activity page filters by where a run came from; a local log with a report you send yourself; and every error message in the app's language.
 
 <details>
-<summary><b>Earlier versions</b> — 0.12.1 back to 0.5.9</summary>
+<summary><b>Earlier versions</b> — 0.13.0 back to 0.5.9</summary>
+
+**In 0.13.0: a new look, English, and an Orynex you can stop, undo and set the tone of.** A calmer chat and pages that use a wide screen; the whole app in German or English; bigger jobs as *tasks* with a plan you approve first and a report from what really happened; a stop button; an activity page with undo for what Orynex created; a personality you set with sliders or your own words; every permission on one page; and quitting a program now asks first.
 
 **In 0.12.1: pictures that fit, and a model that reads them.** Every picture is made at most 1280 px before it is sent, so phone photos are no longer refused, and a switch decides how pictures are read: by a model of your provider that can (found in its current list), or on your PC with *Lokale Bilder*, where no picture leaves the PC.
 
@@ -56,7 +63,7 @@ it acts on the machine, and it keeps what it learns on the machine.
 
 </details>
 
-**Status: pre-release, and the source is not public.** It is not code-signed yet,
+**Status: 1.0, and the source is not public.** It is not code-signed yet,
 so Windows will warn about an unknown publisher — the release notes say why, and
 what else is unfinished. This repository is the project's public face: what it
 is, how it is built, and what it deliberately does not do. See
@@ -90,7 +97,7 @@ and download it with one click. No key, no account.
 *Cloud:* under **KI-Anbieter (Cloud)**,
 paste an API key and press Verbinden. **The provider is detected from the key
 itself**, so there is nothing to choose: `gsk_…` is Groq, `sk-…` OpenAI or
-Anthropic, `AIza…` Google, `nvapi-…` NVIDIA, and so on. With more than one key
+Anthropic, `AIza…` Google, and so on. With more than one key
 stored, a dropdown switches between them, and each remembers its model. The key is checked once against the
 provider and then goes into the Windows Credential Manager — never into a file,
 never into a log.
@@ -105,7 +112,7 @@ search. Everything else works without it.
 **Uninstalling** is the ordinary way: Settings → Apps → Orynex. Your conversations,
 notes and settings are deliberately left behind, in
 `%APPDATA%\com.ceruleancircle.copilot` — uninstalling an app is not the same as
-asking it to forget. Delete that folder if you want it gone.
+asking it to forget. **Settings → Delete everything** removes it all, keys included.
 
 ## What it is
 
@@ -123,7 +130,7 @@ on, Orynex makes neither.
 **You bring your own key — or your own model.** Orynex has no server between you
 and the provider: your key goes into the Windows Credential Manager, and the
 client calls the provider directly. Seven cloud providers are supported (Anthropic,
-OpenAI, OpenRouter, Groq, xAI, Google Gemini, NVIDIA), with tool calling, vision and
+OpenAI, OpenRouter, Groq, xAI, Google Gemini, Cloudflare Workers AI), with tool calling and
 streaming across all of them — and local models through Ollama or any
 OpenAI-compatible server on your PC.
 
@@ -196,7 +203,7 @@ between two steps.
 
 ## What it can do
 
-Around thirty tools, grouped by area, each one declaring what it needs before it
+Over sixty tools, grouped by area, each one declaring what it needs before it
 runs: start and focus applications and open folders, reading folders and text
 files, media and volume, system state, clipboard, web search and opening pages,
 RSS feeds, weather, reading and sending mail and Google Calendar, reading Windows
@@ -217,7 +224,7 @@ your click; an address you did not type yourself is marked. The yes is bound to
 exactly that message — change one character and it no longer counts. The kill
 switch and Full Privacy both stop it.
 
-The model does not get a free hand. A shortlist round narrows thirty tools to the
+The model does not get a free hand. A shortlist round narrows them to the
 handful that could plausibly matter before any of them is offered, and a phrase
 that has already resolved to exactly one tool runs again without asking the model
 at all.
@@ -270,13 +277,12 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 0.14.0](https://github.com/70cacao/Orynex/releases/tag/v0.14.0)** — a
-pre-release under construction, published on 29 October 2026. It is mostly fixes: 2,308
-tests and mutation probes passed, every older database upgrades with its data, garbage
-in every input and every tool argument was tried without a crash, and the crash that
-froze parallel test runs was reproduced and fixed. Several parts have not yet been used
+**[Orynex 1.0.0](https://github.com/70cacao/Orynex/releases/tag/v1.0.0)**, published
+on 3 November 2026. Its last changes come from four days of real use of 0.14.0: 2,385 tests and mutation probes passed, and a whole task, the Spotify
+button and the frozen-window dialog ran in a test copy of the app next to a real one;
+the written files opened in the real programs. Several parts have not yet been used
 for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v0.14.0); every
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.0); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
 button finds new versions (it asks for an administrator password, because Orynex
@@ -287,7 +293,7 @@ that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of
-0.14.0 follows here once it has run; the last one, of the
+1.0.0 follows here once it has run; the last one, of the
 [0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 (SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known

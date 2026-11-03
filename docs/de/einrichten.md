@@ -19,10 +19,10 @@ Orynex erkennt den Anbieter am Key selbst und wählt das Modell. Der Key wird ei
 | --- | --- | --- |
 | Groq | `gsk_` | kostenloser Tarif, damit wurde Orynex gebaut |
 | OpenRouter | `sk-or-` | viele Modelle, auch kostenlose |
-| Anthropic | `sk-ant-` | nur mit Unit-Tests geprüft, noch kein Live-Test |
-| OpenAI | `sk-` | |
+| Anthropic | `sk-ant-` | eigene Anbindung an die offizielle API |
+| OpenAI | `sk-` | dieselbe Anbindung wie Groq und xAI |
 | xAI | `xai-` | |
-| Google Gemini | `AIza` | nur mit Unit-Tests geprüft, noch kein Live-Test |
+| Google Gemini | `AIza` | eigene Anbindung an die offizielle API, kostenloser Tarif |
 | Cloudflare Workers AI | — | eigener Knopf *Cloudflare Workers AI verbinden* |
 
 Mit mehreren Keys schaltest du per Auswahlliste um; jeder Anbieter merkt sich sein Modell. NVIDIA nimmt keinen neuen Key mehr an (ein schon gespeicherter läuft weiter).
@@ -55,5 +55,9 @@ Alles unter *Konto* oder auf der eigenen Seite, alles freiwillig:
 | **Telegram** | Orynex vom Handy aus | einen eigenen Bot von @BotFather |
 | **Anruf** | Orynex ruft dich an, du rufst Orynex an | die Linphone-App und zwei Gratis-Konten |
 | **GitHub** | Issues, Pull Requests, CI lesen | ein Token mit Leserechten |
+
+## Dateien und Schicken
+
+Dafür gibt es nichts einzurichten. Orynex schreibt PDF, Word, PowerPoint, Markdown, Text, CSV, JSON und HTML nach `Dokumente\Orynex` und überschreibt dabei nie eine Datei. Text und Dateien schickt es **an dich selbst**, an deinen gekoppelten Telegram-Chat oder an die Adresse deines Mail-Kontos (dafür muss *Senden erlauben* an sein). An dich selbst geht das ohne Karte; alle anderen Empfänger gehen über eine Mail mit Karte. Unter Full Privacy wird nichts geschickt, geschützte Dateien nie, und eine Datei darf höchstens 45 MB groß sein.
 
 Was man im Alltag damit tut, erklärt die Seite *Hilfe* in der App, jede Funktion in ein, zwei Sätzen.

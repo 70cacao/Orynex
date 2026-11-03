@@ -18,8 +18,6 @@ Was Orynex in Version 1.0 bewusst noch nicht kann oder wo es ein Risiko gibt, da
 | llama.cpp und LM Studio sind experimentell; Ollama ist der gemessene lokale Weg. Lokale Modelle sind langsamer und ungenauer als große Cloud-Modelle. | nicht gemessen |
 | Eigene Verbindungen (MCP, OpenAPI) sind experimentell. | die Rechte sind geprüft (keine Verbindung erweitert still, was Orynex darf), aber kaum mit echten Servern benutzt |
 | Der Handy-Browser (Orynex im Heimnetz) ist in 1.0 ausgeblendet. | nur halb gebaut |
-| Einen Knopf, der alles samt Keys löscht, gibt es noch nicht; die Deinstallation lässt Daten und Keys absichtlich liegen ([so geht es von Hand](rechte-und-daten.md#daten-sichern-und-löschen)). | in Arbeit |
-| In 0.14 sind noch einzelne Zeilen auf Deutsch, auch wenn die App auf Englisch steht: die Einträge auf der Seite *Log* und die Meldung bei einem ausgeschalteten Add-on. Die Fehlermeldungen selbst sind seit 0.14 übersetzt. | ist übersetzt und kommt mit der nächsten Version |
-| Mail: Outlook.com- und Hotmail-Konten gehen nicht; Anhänge kann Orynex nicht senden. | Microsoft hat die Anmeldung per Passwort abgeschaltet |
+| Die Deinstallation lässt Daten und Keys absichtlich liegen; alles zusammen löscht *Einstellungen → Alles löschen* ([mehr dazu](rechte-und-daten.md#daten-sichern-und-löschen)). | damit eine Neuinstallation deinen Verlauf wiederfindet |
+| Mail: Outlook.com- und Hotmail-Konten gehen nicht; Anhänge schickt Orynex nur an deine eigene Adresse. | Microsoft hat die Anmeldung per Passwort abgeschaltet |
 | Was eine Cloud-KI mit deinen Nachrichten tut, regeln die Bedingungen deines Anbieters. Mit lokaler KI und Full Privacy geht nichts raus. | Orynex hat keinen eigenen Server und sieht nichts davon |
-| Wie viel Arbeitsspeicher und Prozessor Orynex über Stunden braucht, ist noch nicht gemessen. | steht im Plan vor 1.0 |

@@ -12,7 +12,7 @@
 | **Ein KI-Anbieter** | ein kostenloser API-Key reicht (z. B. von Groq), oder ein Modell auf deinem PC mit Ollama. Siehe [Einrichten](einrichten.md). |
 | **Admin-Passwort** | einmal bei der Installation und bei jedem Update (Erklärung unten). |
 
-Wie viel Arbeitsspeicher und Prozessor Orynex im Alltag braucht, ist noch nicht gemessen. Entwickelt und getestet wird auf einem Laptop mit 16 GB.
+Gemessen mit 0.14.0 über 8 Stunden: im Leerlauf unter 1 % Prozessor, höchstens rund 550 MB Arbeitsspeicher, das meiste davon die Oberfläche (WebView2). Entwickelt und getestet wird auf einem Laptop mit 16 GB.
 
 ## 1 · Herunterladen
 
@@ -69,4 +69,4 @@ Orynex erscheint als Kreis am Bildschirmrand, und die Ersteinrichtung öffnet si
 - deine Daten in `%APPDATA%\com.ceruleancircle.copilot` und `%LOCALAPPDATA%\com.ceruleancircle.copilot` (Chats, Gedächtnis, Einstellungen, Protokoll, Stimmen);
 - deine Keys und Passwörter in der Windows-Anmeldeinformationsverwaltung.
 
-Wie du beides ganz entfernst, steht unter [Daten sichern und löschen](rechte-und-daten.md#daten-sichern-und-löschen).
+Willst du beides loswerden, drück **vor** dem Deinstallieren *Einstellungen → Alles löschen* ([mehr dazu](rechte-und-daten.md#daten-sichern-und-löschen)).

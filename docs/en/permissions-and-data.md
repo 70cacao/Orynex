@@ -75,9 +75,8 @@ The name `com.ceruleancircle.copilot` is a technical leftover from before Orynex
 - *Memory:* forget single entries, or *Forget everything*.
 - *Account:* remove each key and each connection on its own.
 
-**Removing everything** (there is no single button for it yet):
+**Removing everything:**
 
-1. Uninstall Orynex (see [Install](install.md#uninstalling)).
-2. Delete the two folders above.
-3. *Control Panel → Credential Manager → Windows Credentials*: remove the entries with `com.ceruleancircle.copilot` or `orynex-sip` in the name.
-4. For Gmail, revoke the app password at `myaccount.google.com/apppasswords`; for Google Calendar and Telegram, revoke access there or delete the bot.
+1. *Settings → Delete everything:* chats, memory, settings, voices and every key and password of Orynex go, then Orynex starts as on the first day. Before that you can back up the database and settings there as a ZIP, without keys.
+2. If the program should go too: uninstall Orynex afterwards (see [Install](install.md#uninstalling)).
+3. For Gmail, revoke the app password at `myaccount.google.com/apppasswords`; for Google Calendar and Telegram, revoke access there or delete the bot.

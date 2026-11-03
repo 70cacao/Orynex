@@ -12,7 +12,7 @@
 | **An AI provider** | a free API key is enough (Groq, for example), or a model on your PC with Ollama. See [Set up](setup.md). |
 | **Admin password** | once for installing and for every update (explained below). |
 
-How much memory and processor Orynex uses day to day has not been measured yet. It is developed and tested on a laptop with 16 GB.
+Measured with 0.14.0 over 8 hours: under 1 % processor when idle, at most about 550 MB of memory, most of it the interface (WebView2). It is developed and tested on a laptop with 16 GB.
 
 ## 1 · Download
 
@@ -69,4 +69,4 @@ Orynex appears as a circle at the edge of the screen, and the first-run setup op
 - your data in `%APPDATA%\com.ceruleancircle.copilot` and `%LOCALAPPDATA%\com.ceruleancircle.copilot` (chats, memory, settings, logs, voices);
 - your keys and passwords in the Windows Credential Manager.
 
-How to remove both completely: [Backup and deletion](permissions-and-data.md#backup-and-deletion).
+To get rid of both, press *Settings → Delete everything* **before** uninstalling ([more](permissions-and-data.md#backup-and-deletion)).

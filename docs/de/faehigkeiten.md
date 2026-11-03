@@ -2,7 +2,7 @@
 
 [English](../en/capabilities.md) · [Übersicht](../README.md) · [Rohtext für andere KIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/de/faehigkeiten.md)
 
-*Stand: Orynex 1.0.0, 3. November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
+*Stand: Orynex 1.0.1, 3 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
 
 **So liest du den Stand:**
 
@@ -57,6 +57,7 @@
 | **Szenen:** den Desktop mit einem Satz einrichten | In 1.0 |
 | **Abläufe:** mehrere Schritte auf einmal geplant, über Programme hinweg | Experimentell (das Modell wählt sie nicht immer) |
 | Bietet wiederholte Gewohnheiten als Regel an, bereitet einen Morgenbericht vor | In 1.0 |
+| **Agenten:** Grundregeln, Agenten mit eigenen Vorgaben, an Ordner gebunden. Orynex wählt, wer arbeitet, am PC, über Telegram und am Telefon. Dateien über Telegram landen im Ordner des Agenten | In 1.0.1 |
 
 ## Von unterwegs
 
@@ -99,12 +100,11 @@ Nicht signiert, Windows warnt deshalb beim ersten Start. Updates brauchen ein Ad
 
 In dieser Reihenfolge. Nichts davon ist veröffentlicht, und die Reihenfolge kann sich ändern.
 
-1. **Agenten.** Grundregeln für alle, und Agenten mit eigenen Vorgaben, an Ordner gebunden. Orynex wählt, wer arbeitet, auch über Telegram und am Telefon, und legt ab, was du schickst, im richtigen Ordner. *Im Bau.*
-2. **Workbench.** Alle Arbeit reinwerfen, Orynex arbeitet sie ab.
-3. **Eigene Workbenches.** Beliebige MCP-Server verbinden, eigene Bench bauen; Orynex sieht, was zusammenpasst, und schlägt vor, wie es damit arbeitet.
-4. **Orynex lernt deine Welt kennen.** Es stellt ab und zu eine gute Frage, wählt den richtigen Moment, trennt Fakt von Vermutung. Du kannst alles einsehen, korrigieren und löschen.
-5. **Orynex Anywhere.** Deine eigene Website, gehostet von deinem PC: eine vollständige, frei anpassbare Oberfläche für jedes Feature, auf jedem Gerät wie eine App, mit Konten und Rechten für andere Leute. Damit zusammen die Kamera im Anruf: *„was ist das?“*.
-6. **Linux und Tails.** Die lokalen Funktionen unter Linux, und ein ganzer Assistent auf einem Tails-Stick, mit einem Befehl installiert.
+1. **Workbench.** Alle Arbeit reinwerfen, Orynex arbeitet sie ab.
+2. **Eigene Workbenches.** Beliebige MCP-Server verbinden, eigene Bench bauen; Orynex sieht, was zusammenpasst, und schlägt vor, wie es damit arbeitet.
+3. **Orynex lernt deine Welt kennen.** Es stellt ab und zu eine gute Frage, wählt den richtigen Moment, trennt Fakt von Vermutung. Du kannst alles einsehen, korrigieren und löschen.
+4. **Orynex Anywhere.** Deine eigene Website, gehostet von deinem PC: eine vollständige, frei anpassbare Oberfläche für jedes Feature, auf jedem Gerät wie eine App, mit Konten und Rechten für andere Leute. Damit zusammen die Kamera im Anruf: *„was ist das?“*.
+5. **Linux und Tails.** Die lokalen Funktionen unter Linux, und ein ganzer Assistent auf einem Tails-Stick, mit einem Befehl installiert.
 
 ## Ideen, kein Versprechen
 

@@ -14,6 +14,8 @@ for all of it.
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
+**[What Orynex can do, and what is planned](docs/en/capabilities.md)** · [auf Deutsch](docs/de/faehigkeiten.md) · [plain text for other AIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/en/capabilities.md)
+
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
 > **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.0) and on the [limits page](docs/en/limits.md).

@@ -7,6 +7,7 @@
 | [Rechte und Daten](de/rechte-und-daten.md) — was Orynex darf, was wohin geht, sichern und löschen | [Permissions and data](en/permissions-and-data.md) — what Orynex may do, what goes where, backup and deletion |
 | [Wenn etwas nicht geht](de/fehlerbehebung.md) | [Troubleshooting](en/troubleshooting.md) |
 | [Bekannte Grenzen](de/grenzen.md) | [Known limits](en/limits.md) |
+| [Was Orynex kann, und was geplant ist](de/faehigkeiten.md) | [What Orynex can do, and what is planned](en/capabilities.md) |
 
 Sicherheitslücken melden · Reporting vulnerabilities: [SECURITY.md](../SECURITY.md)
 

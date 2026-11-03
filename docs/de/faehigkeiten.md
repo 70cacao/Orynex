@@ -2,7 +2,7 @@
 
 [English](../en/capabilities.md) · [Übersicht](../README.md) · [Rohtext für andere KIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/de/faehigkeiten.md)
 
-*Stand: Orynex 1.0.1, 3 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
+*Stand: Orynex 1.0.2, 3 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
 
 **So liest du den Stand:**
 
@@ -110,4 +110,4 @@ In dieser Reihenfolge. Nichts davon ist veröffentlicht, und die Reihenfolge kan
 
 Ein Begleiter, der auf das reagiert, was du tust, und auf Bitte handelt. Smart Home. Ein Auto, nur lesend. Eine Uhr.
 
-*Was heute kostenlos ist, bleibt es. Ob später etwas kostet, ist offen.*
+*Das Alltägliche bleibt kostenlos: Chat, Telegram und Ähnliches. Die großen Funktionen für Power-User, etwa Agenten, Aufgaben und ganze automatische Abläufe, brauchen später vielleicht eine Pro-Lizenz. Du kannst [eine Pro-Lizenz für begrenzte Zeit anfragen](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request); das Eintragen in der App kommt mit Orynex 1.0.3.*

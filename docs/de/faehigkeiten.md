@@ -2,7 +2,7 @@
 
 [English](../en/capabilities.md) · [Übersicht](../README.md) · [Rohtext für andere KIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/de/faehigkeiten.md)
 
-*Stand: Orynex 1.0.4, 6 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
+*Stand: Orynex 1.1.0, 6 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
 
 **So liest du den Stand:**
 
@@ -63,6 +63,9 @@
 | **Workbenches:** mehrere Arbeiten auf einmal, eine nach der anderen, Pause am Limit. Fertige Mails warten auf dein Ja. Braucht eine Pro-Lizenz | In 1.0.4 |
 | **Rezepte:** Eine Regel legt deine eigenen Text-Bausteine auf eine Workbench; Speichern gibt genau diesen Text frei. Braucht eine Pro-Lizenz | In 1.0.4 |
 | **Werkstatt:** Orynex schreibt Code und führt ihn in einem Käfig aus, der nur seinen Ordner sieht. Internet nur, wenn du es erlaubst, Installieren fragt immer. Braucht eine Pro-Lizenz | In 1.0.4 |
+| **Vom Handy aus:** Chat, Aufgaben, Agenten, Workbench und Schnellbefehle auf Handy, Tablet oder einem anderen PC im Heimnetz. Anmelden nur per QR-Code, der jede Minute wechselt, plus Ja am PC; höchstens sieben Tage. Braucht eine Pro-Lizenz | In 1.1 |
+| **Der Begleiter redet:** ein Spruch beim Klick, ein Chatfeld beim Doppelklick, Sprüche wenn ein Spiel startet oder du zurück bist, auf Wunsch laut; KI-Sprüche nur, wenn du sie einschaltest | In 1.1 |
+| **Über dich:** Gelerntes bestätigen oder berichtigen; Bestätigtes gilt als Tatsache, und der Begleiter fragt ab und zu nach | In 1.1 |
 
 ## Von unterwegs
 

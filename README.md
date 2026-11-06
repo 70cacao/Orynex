@@ -10,17 +10,19 @@ between. Your own key or your own model, over sixty tools, whole tasks in the ba
 Telegram and phone calls from anywhere, rules that run without you, and a kill switch
 for all of it.
 
-**[→ Download Orynex 1.0.3](https://github.com/70cacao/Orynex/releases/download/v1.0.3/Orynex_1.0.3_x64-setup.exe)** · Windows 11 · 96 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.3)
+**[→ Download Orynex 1.0.4](https://github.com/70cacao/Orynex/releases/download/v1.0.4/Orynex_1.0.4_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.4)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
-**Want to try Pro?** You can [request a Pro licence for a limited time](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) and enter it on the Account page.
+**Free and Pro.** What you ask for and follow is free. What works through several steps on its own, such as tasks, agents, flows and more than three rules and watchers, needs a Pro licence. You can [request one for a limited time](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) and enter it on the Account page.
 
 **[What Orynex can do, and what is planned](docs/en/capabilities.md)** · [auf Deutsch](docs/de/faehigkeiten.md) · [plain text for other AIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/en/capabilities.md)
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.3) and on the [limits page](docs/en/limits.md).
+> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.4) and on the [limits page](docs/en/limits.md).
+
+**New in 1.0.4: workbenches.** Throw several jobs in at once, say yes once, and Orynex works through them, past limits and restarts. Recipes run them on a schedule, in your own text blocks. When no tool fits, Orynex writes the code itself and runs it in a cage that sees only its own folder.
 
 **New in 1.0.1: agents.** General rules for all of Orynex's work, and agents with rules of their own, bound to folders. Orynex picks who works, at the desk, on Telegram and on a call, and files what you send from your phone into the right folder. An agent only ever narrows what Orynex may do.
 
@@ -283,12 +285,12 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 1.0.3](https://github.com/70cacao/Orynex/releases/tag/v1.0.3)**, published
-on 4 November 2026. Entering a licence, designs for files, undo for saved files. Before that, four days of real use of 0.14.0: 2,460 tests and mutation probes passed, and a whole task, the Spotify
+**[Orynex 1.0.4](https://github.com/70cacao/Orynex/releases/tag/v1.0.4)**, published
+on 6 November 2026. Workbenches, recipes, a caged workshop for code, pictures, and the line between free and Pro. Before that, four days of real use of 0.14.0: 2,589 tests and mutation probes passed, and a whole task, the Spotify
 button and the frozen-window dialog ran in a test copy of the app next to a real one;
 the written files opened in the real programs. Several parts have not yet been used
 for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.3); every
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.0.4); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
 button finds new versions (it asks for an administrator password, because Orynex
@@ -299,7 +301,7 @@ that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of
-1.0.3 follows here once it has run; the last one, of the
+1.0.4 follows here once it has run; the last one, of the
 [0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 (SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
@@ -314,4 +316,4 @@ Proprietary — see [LICENSE](LICENSE). All rights reserved. The software may be
 used, once distributed, but not modified, redistributed or published. This is
 not an open-source project and code contributions are not accepted.
 
-For licensing enquiries: micha@ceruleancircle.com
+For licensing enquiries: micha.noel.donges@gmail.com

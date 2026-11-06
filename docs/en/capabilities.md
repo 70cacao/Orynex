@@ -2,7 +2,7 @@
 
 [Deutsch](../de/faehigkeiten.md) · [Overview](../README.md) · [Plain text for other AIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/en/capabilities.md)
 
-*State: Orynex 1.0.3, 4 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
+*State: Orynex 1.0.4, 6 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
 
 **How to read the status:**
 
@@ -40,6 +40,8 @@ Over sixty tools. What changes something asks first or can be undone, and everyt
 | Mail | Read, write with a card before each send (Outlook.com and Hotmail do not work) | In 1.0 |
 | Calendar | Read through a link, add or change with your Google project | In 1.0 |
 | Screen | Read it, click and type, only on your request | In 1.0 |
+| Pictures | Free photos from Wikimedia Commons with their credit, new pictures with your Cloudflare key, on slides, as a wallpaper with a way back | In 1.0.4 |
+| Lock, sleep, shut down, a screenshot to your Telegram | On your word; shutting down asks first | In 1.0.4 |
 | Music and sound | Spotify plays what you asked for, media keys, volume | In 1.0 (a Spotify update can break it) |
 | System | State of the PC, power plan, settings, clipboard, a checkup | In 1.0 |
 | Windows notifications | Read them, answer in a messenger | In 1.0 |
@@ -51,13 +53,16 @@ Over sixty tools. What changes something asks first or can be undone, and everyt
 
 | | Status |
 |---|---|
-| **Tasks:** you approve goal and plan, Orynex works in the background, checks the result and gives you a report, with copy, PDF and send buttons | In 1.0 |
-| **Rules:** by time, when a program starts, on new mail and more, each with a limit on how far it may go alone | In 1.0 |
+| **Tasks:** you approve goal and plan, Orynex works in the background, checks the result and gives you a report, with copy, PDF and send buttons. Needs a Pro licence | In 1.0 |
+| **Rules:** by time, when a program starts, on new mail and more, each with a limit on how far it may go alone. Three rules and watchers together are free, more need a Pro licence | In 1.0 |
 | **Watchers:** prices, availability, news | In 1.0, tests only |
 | **Scenes:** set up your desktop with one sentence | In 1.0 |
-| **Flows:** several steps planned at once, across programs | Experimental (the model does not always pick them) |
+| **Flows:** several steps planned at once, across programs. Needs a Pro licence | Experimental (the model does not always pick them) |
 | Offers habits you repeat as a rule, and prepares a morning report | In 1.0 |
-| **Agents:** general rules, agents with rules of their own bound to folders. Orynex picks who works, at the desk, on Telegram and on a call. Files sent over Telegram go into the agent's folder | In 1.0.1 |
+| **Agents:** general rules, agents with rules of their own bound to folders. Orynex picks who works, at the desk, on Telegram and on a call. Files sent over Telegram go into the agent's folder. Needs a Pro licence | In 1.0.1 |
+| **Workbenches:** several jobs at once, worked through one after the other, pausing at limits. Finished mails wait for your yes. Needs a Pro licence | In 1.0.4 |
+| **Recipes:** a rule puts your own text blocks on a workbench; saving approves exactly that text. Needs a Pro licence | In 1.0.4 |
+| **Workshop:** Orynex writes code and runs it in a cage that sees only its own folder. Internet only if you allow it, installs always ask. Needs a Pro licence | In 1.0.4 |
 
 ## Reaching it from away
 
@@ -110,4 +115,4 @@ In this order. Nothing here is released yet, and the order can change.
 
 A companion that reacts to what you do and acts when you ask. Smart home. A car, read only. A watch.
 
-*The everyday features stay free: chat, Telegram and the like. The big features for power users, such as agents, tasks and whole automated workflows, may need a Pro licence later. You can [request a Pro licence for a limited time](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) and enter it on the Account page.*
+*What you ask for and follow is free: chat, every provider, voice, Telegram, calls, single files, connections. What works through several steps on its own needs a Pro licence: tasks, agents, flows, more than three rules and watchers, skins. Nothing you made is lost when a licence ends. You can [request a Pro licence for a limited time](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) and enter it on the Account page.*

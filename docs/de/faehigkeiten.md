@@ -2,7 +2,7 @@
 
 [English](../en/capabilities.md) · [Übersicht](../README.md) · [Rohtext für andere KIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/de/faehigkeiten.md)
 
-*Stand: Orynex 1.0.3, 4 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
+*Stand: Orynex 1.0.4, 6 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
 
 **So liest du den Stand:**
 
@@ -40,6 +40,8 @@
 | Mail | Lesen, schreiben mit Karte vor jedem Senden (Outlook.com und Hotmail gehen nicht) | In 1.0 |
 | Kalender | Lesen über einen Link, eintragen und ändern mit deinem Google-Projekt | In 1.0 |
 | Bildschirm | Lesen, klicken und tippen, nur auf deine Bitte | In 1.0 |
+| Bilder | Freie Fotos aus Wikimedia Commons samt Nachweis, neue Bilder mit deinem Cloudflare-Key, auf Folien, als Hintergrundbild mit Rückweg | In 1.0.4 |
+| Sperren, Schlaf, Herunterfahren, Screenshot an dein Telegram | Auf dein Wort; Herunterfahren fragt vorher | In 1.0.4 |
 | Musik und Ton | Spotify spielt, was du wolltest, Medientasten, Lautstärke | In 1.0 (ein Spotify-Update kann es brechen) |
 | System | Zustand des PCs, Energieplan, Einstellungen, Zwischenablage, Checkup | In 1.0 |
 | Windows-Benachrichtigungen | Lesen, im Messenger antworten | In 1.0 |
@@ -51,13 +53,16 @@
 
 | | Stand |
 |---|---|
-| **Aufgaben:** du gibst Ziel und Plan frei, Orynex arbeitet im Hintergrund, prüft das Ergebnis und gibt dir einen Bericht, mit Knöpfen für Kopieren, PDF und Schicken | In 1.0 |
-| **Regeln:** nach Uhrzeit, beim Start eines Programms, bei neuer Mail und mehr, jede mit einer Grenze, wie weit sie allein gehen darf | In 1.0 |
+| **Aufgaben:** du gibst Ziel und Plan frei, Orynex arbeitet im Hintergrund, prüft das Ergebnis und gibt dir einen Bericht, mit Knöpfen für Kopieren, PDF und Schicken. Braucht eine Pro-Lizenz | In 1.0 |
+| **Regeln:** nach Uhrzeit, beim Start eines Programms, bei neuer Mail und mehr, jede mit einer Grenze, wie weit sie allein gehen darf. Drei Regeln und Wächter zusammen sind frei, mehr braucht eine Pro-Lizenz | In 1.0 |
 | **Wächter:** Preise, Verfügbarkeit, Nachrichten | In 1.0, nur Tests |
 | **Szenen:** den Desktop mit einem Satz einrichten | In 1.0 |
-| **Abläufe:** mehrere Schritte auf einmal geplant, über Programme hinweg | Experimentell (das Modell wählt sie nicht immer) |
+| **Abläufe:** mehrere Schritte auf einmal geplant, über Programme hinweg. Braucht eine Pro-Lizenz | Experimentell (das Modell wählt sie nicht immer) |
 | Bietet wiederholte Gewohnheiten als Regel an, bereitet einen Morgenbericht vor | In 1.0 |
-| **Agenten:** Grundregeln, Agenten mit eigenen Vorgaben, an Ordner gebunden. Orynex wählt, wer arbeitet, am PC, über Telegram und am Telefon. Dateien über Telegram landen im Ordner des Agenten | In 1.0.1 |
+| **Agenten:** Grundregeln, Agenten mit eigenen Vorgaben, an Ordner gebunden. Orynex wählt, wer arbeitet, am PC, über Telegram und am Telefon. Dateien über Telegram landen im Ordner des Agenten. Braucht eine Pro-Lizenz | In 1.0.1 |
+| **Workbenches:** mehrere Arbeiten auf einmal, eine nach der anderen, Pause am Limit. Fertige Mails warten auf dein Ja. Braucht eine Pro-Lizenz | In 1.0.4 |
+| **Rezepte:** Eine Regel legt deine eigenen Text-Bausteine auf eine Workbench; Speichern gibt genau diesen Text frei. Braucht eine Pro-Lizenz | In 1.0.4 |
+| **Werkstatt:** Orynex schreibt Code und führt ihn in einem Käfig aus, der nur seinen Ordner sieht. Internet nur, wenn du es erlaubst, Installieren fragt immer. Braucht eine Pro-Lizenz | In 1.0.4 |
 
 ## Von unterwegs
 
@@ -110,4 +115,4 @@ In dieser Reihenfolge. Nichts davon ist veröffentlicht, und die Reihenfolge kan
 
 Ein Begleiter, der auf das reagiert, was du tust, und auf Bitte handelt. Smart Home. Ein Auto, nur lesend. Eine Uhr.
 
-*Das Alltägliche bleibt kostenlos: Chat, Telegram und Ähnliches. Die großen Funktionen für Power-User, etwa Agenten, Aufgaben und ganze automatische Abläufe, brauchen später vielleicht eine Pro-Lizenz. Du kannst [eine Pro-Lizenz für begrenzte Zeit anfragen](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) und auf der Seite Konto eintragen.*
+*Frei ist, worum du bittest und was du mitbekommst: Chat, alle Anbieter, Sprache, Telegram, Anrufe, einzelne Dateien, Verbindungen. Was allein in mehreren Schritten durcharbeitet, braucht eine Pro-Lizenz: Aufgaben, Agenten, Abläufe, mehr als drei Regeln und Wächter, Skins. Was du angelegt hast, bleibt erhalten, wenn eine Lizenz endet. Du kannst [eine Pro-Lizenz für begrenzte Zeit anfragen](https://github.com/70cacao/Orynex/issues/new?title=Pro%20licence%20request) und auf der Seite Konto eintragen.*

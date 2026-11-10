@@ -10,7 +10,7 @@ between. Your own key or your own model, over sixty tools, whole tasks in the ba
 Telegram and phone calls from anywhere, rules that run without you, and a kill switch
 for all of it.
 
-**[→ Download Orynex 1.1.0](https://github.com/70cacao/Orynex/releases/download/v1.1.0/Orynex_1.1.0_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.0)
+**[→ Download Orynex 1.1.1](https://github.com/70cacao/Orynex/releases/download/v1.1.1/Orynex_1.1.1_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.1)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
@@ -20,7 +20,9 @@ for all of it.
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.0) and on the [limits page](docs/en/limits.md).
+> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.1) and on the [limits page](docs/en/limits.md).
+
+**New in 1.1.1: a focus button that does something.** *Make me more productive* starts a focus scene: a 25-minute timer, quiet music, Orynex quiet meanwhile, and a card per game launcher or chat asking whether to close it. Scenes can now start by sentences, and Orynex stays closed over full-screen games unless you press its shortcut.
 
 **New in 1.1: Orynex from your phone, and a companion that talks.** With Pro, open Orynex on your phone, tablet or another PC in your home network: chat, tasks, agents, the workbench and quick commands. You log in only by scanning a QR code that changes every minute, the PC asks you to allow each new device, and a login lasts seven days at most. The companion now speaks up: a line when you click it, a small chat field on a double click, and short remarks when a game starts or you come back.
 
@@ -287,12 +289,12 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 1.1.0](https://github.com/70cacao/Orynex/releases/tag/v1.1.0)**, published
-on 6 November 2026. Orynex from the phone with a QR login, a companion that talks and climbs onto windows, and confirming what Orynex learned about you. Before that, four days of real use of 0.14.0: 2,616 tests and mutation probes passed, and a whole task, the Spotify
+**[Orynex 1.1.1](https://github.com/70cacao/Orynex/releases/tag/v1.1.1)**, published
+on 10 November 2026. A focus scene behind the quick button, Orynex quiet, scenes started by sentences, a companion that climbs any window, and no opening over full-screen games. Before that, four days of real use of 0.14.0: 2,640 tests and mutation probes passed, and a whole task, the Spotify
 button and the frozen-window dialog ran in a test copy of the app next to a real one;
 the written files opened in the real programs. Several parts have not yet been used
 for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.0); every
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.1.1); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
 button finds new versions (it asks for an administrator password, because Orynex
@@ -303,7 +305,7 @@ that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of
-1.1.0 follows here once it has run; the last one, of the
+1.1.1 follows here once it has run; the last one, of the
 [0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 (SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known

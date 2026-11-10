@@ -2,7 +2,7 @@
 
 [Deutsch](../de/faehigkeiten.md) · [Overview](../README.md) · [Plain text for other AIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/en/capabilities.md)
 
-*State: Orynex 1.1.0, 6 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
+*State: Orynex 1.1.1, 10 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
 
 **How to read the status:**
 
@@ -66,6 +66,7 @@ Over sixty tools. What changes something asks first or can be undone, and everyt
 | **From your phone:** chat, tasks, agents, workbench and quick commands on phone, tablet or another PC in your home network. Login only by a QR code that changes every minute, plus a yes at the PC; seven days at most. Needs a Pro licence | In 1.1 |
 | **The companion talks:** a line on a click, a chat field on a double click, remarks when a game starts or you are back, aloud if you like; lines from the AI only if you switch them on | In 1.1 |
 | **About you:** confirm or correct what Orynex learned; confirmed facts count as facts, and the companion asks now and then | In 1.1 |
+| **Focus:** *Make me more productive* starts a scene with a timer, quiet music, Orynex quiet and a card per distracting program; scenes can start by sentences | In 1.1.1 |
 
 ## Reaching it from away
 

@@ -2,7 +2,7 @@
 
 [English](../en/capabilities.md) · [Übersicht](../README.md) · [Rohtext für andere KIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/de/faehigkeiten.md)
 
-*Stand: Orynex 1.1.1, 10 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
+*Stand: Orynex 1.2.0, 11 November 2026. Ein Desktop-Assistent für Windows 11, nativ (Rust, Tauri v2, React), kostenlos nutzbar, ohne Konto und ohne einen Server von uns dazwischen.*
 
 **So liest du den Stand:**
 
@@ -67,6 +67,7 @@
 | **Der Begleiter redet:** ein Spruch beim Klick, ein Chatfeld beim Doppelklick, Sprüche wenn ein Spiel startet oder du zurück bist, auf Wunsch laut; KI-Sprüche nur, wenn du sie einschaltest | In 1.1 |
 | **Über dich:** Gelerntes bestätigen oder berichtigen; Bestätigtes gilt als Tatsache, und der Begleiter fragt ab und zu nach | In 1.1 |
 | **Fokus:** *Mach mich produktiver* startet eine Szene mit Timer, ruhiger Musik, Orynex still und einer Karte je ablenkendem Programm; Szenen starten auch über Sätze | In 1.1.1 |
+| **Die Insel:** die vier Stufen als Glas-Insel oben in der Mitte, Milchglas oder getönt, Momente von selbst, eigene Kacheln, Strich im Spiel, alles einstellbar; der Kreis bleibt wählbar | In 1.2 |
 
 ## Von unterwegs
 

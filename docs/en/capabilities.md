@@ -2,7 +2,7 @@
 
 [Deutsch](../de/faehigkeiten.md) · [Overview](../README.md) · [Plain text for other AIs](https://raw.githubusercontent.com/70cacao/Orynex/main/docs/en/capabilities.md)
 
-*State: Orynex 1.1.1, 10 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
+*State: Orynex 1.2.0, 11 November 2026. A Windows 11 desktop assistant, native (Rust, Tauri v2, React), free to use, with no account and no server of ours in between.*
 
 **How to read the status:**
 
@@ -67,6 +67,7 @@ Over sixty tools. What changes something asks first or can be undone, and everyt
 | **The companion talks:** a line on a click, a chat field on a double click, remarks when a game starts or you are back, aloud if you like; lines from the AI only if you switch them on | In 1.1 |
 | **About you:** confirm or correct what Orynex learned; confirmed facts count as facts, and the companion asks now and then | In 1.1 |
 | **Focus:** *Make me more productive* starts a scene with a timer, quiet music, Orynex quiet and a card per distracting program; scenes can start by sentences | In 1.1.1 |
+| **The island:** the four stages as a glass island at the top centre, frosted or tinted, moments by themselves, pinned tiles, a strip over games, everything adjustable; the orb stays selectable | In 1.2 |
 
 ## Reaching it from away
 

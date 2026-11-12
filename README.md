@@ -10,7 +10,7 @@ between. Your own key or your own model, over sixty tools, whole tasks in the ba
 Telegram and phone calls from anywhere, rules that run without you, and a kill switch
 for all of it.
 
-**[→ Download Orynex 1.2.0](https://github.com/70cacao/Orynex/releases/download/v1.2.0/Orynex_1.2.0_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.2.0)
+**[→ Download Orynex 1.3.0](https://github.com/70cacao/Orynex/releases/download/v1.3.0/Orynex_1.3.0_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.3.0)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
@@ -20,7 +20,9 @@ for all of it.
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.2.0) and on the [limits page](docs/en/limits.md).
+> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.3.0) and on the [limits page](docs/en/limits.md).
+
+**New in 1.3: premium from top to bottom.** Every page in the island's style, small windows of your own (music, lyrics, a mini chat, focus, readings) that stay clickable-through over games, and a strip over games that shows music, readings and your frame rate. Orynex presses buttons in programs behind your window without bringing them to the front, understands "my favourite playlist" from what it knows about you instead of searching for it, and moves slow providers to the back by itself.
 
 **New in 1.2: the island.** The orb and the bar become one slim glass island at the top centre: it grows when you need it, shows what is happening with the button for it, and opens into big cards and tiles you pin yourself. Real frosted glass, a quiet strip over games, and everything adjustable, with a preset. The classic orb stays one click away.
 
@@ -291,12 +293,12 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 1.2.0](https://github.com/70cacao/Orynex/releases/tag/v1.2.0)**, published
-on 11 November 2026. The island: the orb and the bar as one glass island at the top, frosted glass, big cards and pinned tiles, a strip over games, everything adjustable. Before that, four days of real use of 0.14.0: 2,657 tests and mutation probes passed, and a whole task, the Spotify
+**[Orynex 1.3.0](https://github.com/70cacao/Orynex/releases/tag/v1.3.0)**, published
+on 12 November 2026. Every page in the island's style, small windows of your own, the frame rate over games, buttons pressed in the background. Before release: 2,689 tests and mutation probes passed, and a whole task, the Spotify
 button and the frozen-window dialog ran in a test copy of the app next to a real one;
 the written files opened in the real programs. Several parts have not yet been used
 for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.2.0); every
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.3.0); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
 button finds new versions (it asks for an administrator password, because Orynex
@@ -307,7 +309,7 @@ that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of
-1.2.0 follows here once it has run; the last one, of the
+1.3.0 follows here once it has run; the last one, of the
 [0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
 (SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known

@@ -312,14 +312,13 @@ It is **not code-signed**. Windows SmartScreen will say *"unknown publisher"*;
 that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
-What you can check instead: a VirusTotal scan of every installer. The scan of
-1.6.0 follows here once it has run; the last one, of the
-[0.12.1 installer](https://www.virustotal.com/gui/file/d9fd60fc222fac3ceb7b187f45b3b43fc9a5d00ad6593ce125c2c6a79de5755f)
-(SHA-256 `d9fd60fc…5755f`), scanned 20 October 2026: **1 of 63** engines flagged it —
+What you can check instead: a VirusTotal scan of every installer. The scan of the
+[1.6.0 installer](https://www.virustotal.com/gui/file/701c2565afcfbfcb4904aad6ad3341ce9f9d8ad0582e37334e092180c0523b7d)
+(SHA-256 `701c2565…523b7d`), scanned 16 November 2026: **1 of 64** engines flagged it —
 Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
 signature. The large engines all report it clean: Microsoft Defender, Kaspersky,
 Bitdefender, ESET, Avast, AVG, Malwarebytes, Sophos, Symantec (Norton), CrowdStrike,
-SentinelOne, Avira and F-Secure. Unsigned installers draw that kind of single hit; the
+SentinelOne, Avira, WithSecure (F-Secure), McAfee and Trend Micro. Unsigned installers draw that kind of single hit; the
 scan shows every result rather than asking you to take our word.
 
 ## Licence

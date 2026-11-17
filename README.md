@@ -10,7 +10,7 @@ between. Your own key or your own model, over sixty tools, whole tasks in the ba
 Telegram and phone calls from anywhere, rules that run without you, and a kill switch
 for all of it.
 
-**[→ Download Orynex 1.6.0](https://github.com/70cacao/Orynex/releases/download/v1.6.0/Orynex_1.6.0_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.6.0)
+**[→ Download Orynex 1.7.0](https://github.com/70cacao/Orynex/releases/download/v1.7.0/Orynex_1.7.0_x64-setup.exe)** · Windows 11 · 97 MB · [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.7.0)
 
 **[▶ See it in action on YouTube](https://www.youtube.com/@OrynexAI-Assistant)** · short clips, one feature each
 
@@ -20,9 +20,11 @@ for all of it.
 
 **[Help: install, set up, permissions, troubleshooting](docs/README.md)** · Deutsch & English · [Security](SECURITY.md)
 
-> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.6.0) and on the [limits page](docs/en/limits.md).
+> **1.0.** What is known not to work yet is listed in the [release notes](https://github.com/70cacao/Orynex/releases/tag/v1.7.0) and on the [limits page](docs/en/limits.md).
 
-**New in 1.6: it does the work.** Orynex no longer only reports that your disk is full or your game lags: it cleans up (old leftovers to the recycle bin, never what a program still uses), closes what only runs in the background with one card, has a game mode that switches back by itself when the game ends, offers the right fix for what the checkup found, and says what it changed, measured. It can also use Ollama on another PC in your home network, and offers a small model for PCs without a graphics card.
+**New in 1.7: start without a key, and checked instead of believed.** One click on the first start downloads a small local model, so Orynex works with no account anywhere. Every card that asks about a list lets you tick what should happen. When a game starts, the island offers the game mode, taken with one key without leaving the game. After setting the volume, the power plan or writing a file, Orynex looks whether it really happened and says *not confirmed* when it did not. Plus a calculator for the AI, faster research, and agents you can export and import as files.
+
+**In 1.6: it does the work.** Orynex no longer only reports that your disk is full or your game lags: it cleans up (old leftovers to the recycle bin, never what a program still uses), closes what only runs in the background with one card, has a game mode that switches back by itself when the game ends, offers the right fix for what the checkup found, and says what it changed, measured. It can also use Ollama on another PC in your home network, and offers a small model for PCs without a graphics card.
 
 **In 1.4: it knows your world.** What Orynex knows about you in one place, with where each fact came from and whether you confirmed it; open threads it still knows tomorrow; an initiative that speaks up rarely and never while you play; messages from the apps you choose as context, read on your PC; and as much context as your model holds.
 
@@ -297,12 +299,11 @@ Security rules are checked by mutation: remove the rule, and a test has to fail.
 
 ## Availability
 
-**[Orynex 1.6.0](https://github.com/70cacao/Orynex/releases/tag/v1.6.0)**, published
-on 16 November 2026. Clean-up, game mode, fixes for what the checkup finds, AI in the home network, a small model without a graphics card. Before release: 2,814 tests and mutation probes passed, and a whole task, the Spotify
-button and the frozen-window dialog ran in a test copy of the app next to a real one;
-the written files opened in the real programs. Several parts have not yet been used
+**[Orynex 1.7.0](https://github.com/70cacao/Orynex/releases/tag/v1.7.0)**, published
+on 17 November 2026. Start without a key, ticks in every card, the game offer on the island, checked results, agents as files. Before release: 2,852 tests and mutation probes passed;
+this version was not yet tried in a test copy of the app. Several parts have not yet been used
 for real; they are listed at the end of the
-[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.6.0); every
+[release notes](https://github.com/70cacao/Orynex/releases/tag/v1.7.0); every
 earlier version has its own notes, with what was tested and what was not, under
 [Releases](https://github.com/70cacao/Orynex/releases). From 0.13.0 on, the *Update*
 button finds new versions (it asks for an administrator password, because Orynex

@@ -316,12 +316,11 @@ that is about the missing certificate, not about the file. **More info → Run
 anyway** gets past it. A certificate costs several hundred euros a year and this
 is a hobby project so far — saying so plainly seemed better than waiting.
 What you can check instead: a VirusTotal scan of every installer. The scan of the
-[1.7.0 installer](https://www.virustotal.com/gui/file/a768c807ec492f22da255a30eb125f51022770d4914348e206d7576d4eb758b1)
-(SHA-256 `a768c807…58b1`), scanned 17 November 2026: **1 of 68** engines flagged it —
-Trapmine, *"Suspicious.low.ml.score"*, a machine-learning guess rather than a known
-signature. The large engines all report it clean: Microsoft Defender, Kaspersky,
-Bitdefender, ESET, Avast, AVG, Malwarebytes, Sophos, Symantec (Norton), CrowdStrike,
-SentinelOne, Avira, WithSecure (F-Secure), McAfee and Trend Micro. Unsigned installers draw that kind of single hit; the
+[1.8.0 installer](https://www.virustotal.com/gui/file/ab015f02969374d4732db360ebb84e7dd38c266a875272b103560d90238a2834)
+(SHA-256 `ab015f02…2834`), scanned 25 November 2026: **no engine flagged it**. Earlier
+installers drew at most a single machine-learning guess (Trapmine, *"Suspicious.low.ml.score"*),
+never a known signature, and the large engines (Microsoft Defender, Kaspersky, Bitdefender,
+ESET, Avast, Malwarebytes, Sophos, Symantec and others) have reported every one clean. The
 scan shows every result rather than asking you to take our word.
 
 ## Licence
